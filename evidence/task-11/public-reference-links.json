@@ -1,0 +1,126 @@
+{
+  "at": "2026-09-18T06:35:25.556Z",
+  "source": "Read-only public GET verification. No protected catalog, credentials, runtime fetch or new instructor approval. Existing reference files preserved.",
+  "records": [
+    {
+      "id": "acml-home",
+      "url": "https://acml.teddylazebnik.com/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 42134,
+      "sha256": "fc4d01d099c14c69ad34921305e787a1ca564fc33136cd30151d4d8495c1aa97",
+      "pdf": null,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-01",
+      "url": "https://teddylazebnik.com/files/rl_course/1.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 4146597,
+      "sha256": "8b1c74286179872ad2a0b2378ed1a09b1f7ae1223f1091fcee9a11c3073a9efa",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-02",
+      "url": "https://teddylazebnik.com/files/rl_course/2.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 842636,
+      "sha256": "7a9be17ab27d2751a2c73b0627908dbac673eb303c8ffb94607ac46b4938592c",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-03",
+      "url": "https://teddylazebnik.com/files/rl_course/3.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 938265,
+      "sha256": "ace9a8d535e7b30ecb4b7a8b38ac49cf8c4bf924b04596f12ba8251bf5d25b90",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-04",
+      "url": "https://teddylazebnik.com/files/rl_course/5.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 1385546,
+      "sha256": "13d2b4bb8362d6914baf236c79be3c235f58a4c00aeae2522beb9fdfbd5ca6ae",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-05",
+      "url": "https://teddylazebnik.com/files/rl_course/6.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 745806,
+      "sha256": "c76dd0879cc3a76d5fa06e07c8a4dc8257a5ea82dae6f2ceca47c99d38fa6fbc",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-06",
+      "url": "https://teddylazebnik.com/files/rl_course/7.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 1101604,
+      "sha256": "fd022bc6837f18ffe722afa82a82ca03fa052877743af1efa3050e8b013b23f1",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-07",
+      "url": "https://teddylazebnik.com/files/rl_course/8.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 1228312,
+      "sha256": "59a41c735557a64f9207b559b5daf85891e5c6438535bb04698be98a31912da5",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-08",
+      "url": "https://teddylazebnik.com/files/rl_course/9.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 631387,
+      "sha256": "17699b660c53b3f7743a407f58b56fee2d2f9b9898c62893ce87fb8ab0b0da05",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-09",
+      "url": "https://teddylazebnik.com/files/rl_course/10.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 3416405,
+      "sha256": "ae7315efb8eec2a1a9ff58de6a29553ba76706406565e8f64ee5059be768ca7c",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-10",
+      "url": "https://teddylazebnik.com/files/rl_course/14.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 1401096,
+      "sha256": "24c5ad0a75abd46442dccaf7bd337a4ddcd3819f8c5cde9a90aa7efeabbccfb1",
+      "pdf": true,
+      "matchesPriorHash": true
+    },
+    {
+      "id": "lesson-11",
+      "url": "https://teddylazebnik.com/files/rl_course/11.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 9099199,
+      "sha256": "143b49cf23f438ff4c11d1ffe852bc6f68ba615df24250bb53a47eb4fa864a19",
+      "pdf": true,
+      "matchesPriorHash": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+
+> rl-island@0.1.0 test:e2e
+> node scripts/browser-tests.mjs test
+
+
+Running 30 tests using 1 worker
+
+(node:26952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\environment.spec.js:30:1 › keyboard movement, collision trace, goal reward, and absorbing terminal gameplay (8.4s)
+  ok  2 tests\e2e\environment.spec.js:64:1 › text map and Canvas hit testing inspect cells without moving or drawing RNG (7.4s)
+  x   3 tests\e2e\environment.spec.js:80:1 › touch movement, slippery probabilities, and mobile inspector use real state (30.2s)
+(node:1800) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   4 tests\e2e\environment.spec.js:106:1 › Run/Pause/resume and Step produce identical seeded checkpoints and traces (30.2s)
+(node:20620) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   5 tests\e2e\environment.spec.js:129:1 › leaving a workspace cancels Run and the same session is shared by all eleven lessons (7.1s)
+(node:7460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 tests\e2e\environment.spec.js:143:1 › external timeout is visibly truncated, nonterminal, and cannot keep accumulating rewards (10.8s)

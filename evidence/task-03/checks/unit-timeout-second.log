@@ -1,0 +1,32 @@
+
+> rl-island@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.1 C:/Users/lazeb/Desktop/acml_rl_course
+
+ ❯ tests/unit/environment.test.js (55 tests | 1 failed) 12181ms
+   ❯ independent transition/reward fixtures (10)
+     × sampled movement labels within a merged collision preserve branch frequencies 5185ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/environment.test.js > independent transition/reward fixtures > sampled movement labels within a merged collision preserve branch frequencies
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/unit/environment.test.js:150:3
+    148|     expect(movements).toEqual({ right: counts['1,0'], down: counts['0,…
+    149|   }, 15000); // Statistical fixture, not a five-second performance ben…
+    150|   test('sampled movement labels within a merged collision preserve bra…
+       |   ^
+    151|     const counts = { up: 0, left: 0, right: 0 }, map = tiny({ slip: .2…
+    152|     for (let seed = 0; seed < 10000; seed++) {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  1 failed | 115 passed (116)
+   Start at  22:17:07
+   Duration  16.86s (tests 71%, transform 22%, import 5%, worker 1%)
+

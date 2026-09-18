@@ -1,0 +1,42 @@
+
+> rl-island@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.1 C:/Users/lazeb/Desktop/acml_rl_course
+
+ ❯ tests/unit/learning-persistence.test.js (19 tests | 1 failed) 7356ms
+   ❯ bounded learning checkpoints, honest evidence and backups (19)
+     × actual calibration comparisons validate and challenge accepts whichever measured method wins 5733ms
+ ❯ tests/unit/model-free.test.js (27 tests | 1 failed) 10025ms
+   ❯ independently specified numerical model-free fixtures (21)
+     × step scheduling and repeated rendering snapshots cannot alter seeded results 5087ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/learning-persistence.test.js > bounded learning checkpoints, honest evidence and backups > actual calibration comparisons validate and challenge accepts whichever measured method wins
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/unit/learning-persistence.test.js:23:2
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/unit/model-free.test.js > independently specified numerical model-free fixtures > step scheduling and repeated rendering snapshots cannot alter seeded results
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/unit/model-free.test.js:56:2
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed | 4 passed (6)
+      Tests  2 failed | 186 passed (188)
+   Start at  00:24:14
+   Duration  35.66s (tests 55%, transform 42%, import 3%)
+
+  Transform  transforming modules took 48.18s · 42% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

@@ -1,0 +1,10 @@
+file:///C:/Users/lazeb/Desktop/acml_rl_course/node_modules/@axe-core/playwright/dist/index.mjs:218
+      throw new Error(
+            ^
+
+Error: Please use browser.newContext()
+ Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md
+    at AxeBuilder.analyze (file:///C:/Users/lazeb/Desktop/acml_rl_course/node_modules/@axe-core/playwright/dist/index.mjs:218:13)
+    at async file:///C:/Users/lazeb/Desktop/acml_rl_course/scripts/capture-learning-review.mjs:17:352
+
+Node.js v22.18.0

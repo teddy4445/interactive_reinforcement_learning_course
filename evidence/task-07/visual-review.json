@@ -1,0 +1,60 @@
+{
+  "source": "Actual Chromium review of developer QA export; no student results",
+  "keyboardStep": true,
+  "keyboardPause": true,
+  "keyboardCancel": true,
+  "mobilePageOverflow": false,
+  "axeViolations": 0,
+  "workerEvents": [
+    {
+      "command": "initialize",
+      "event": "ack",
+      "ms": 495.5
+    },
+    {
+      "command": "initialize",
+      "event": "ack",
+      "ms": 67.5
+    },
+    {
+      "command": "resetEpisode",
+      "event": "ack",
+      "ms": 7.5
+    },
+    {
+      "command": "step",
+      "event": "ack",
+      "ms": 10.200000017881393
+    },
+    {
+      "command": "trainInteractions",
+      "event": "ack",
+      "ms": 8.5
+    },
+    {
+      "command": "pause",
+      "event": "ack",
+      "ms": 31.299999982118607
+    },
+    {
+      "command": "pause",
+      "event": "paused",
+      "ms": 33.89999997615814
+    },
+    {
+      "command": "resume",
+      "event": "ack",
+      "ms": 8
+    },
+    {
+      "command": "cancel",
+      "event": "ack",
+      "ms": 35.400000005960464
+    },
+    {
+      "command": "cancel",
+      "event": "cancelled",
+      "ms": 38.20000001788139
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-09-17T21:45:28.123Z",
+  "assets": [
+    {
+      "name": "index-BU6A4bEh.css",
+      "sha256": "28a720f60629a54d29756d852bc85e817a7d2c4bbd22f7857ce16701d45ed298"
+    },
+    {
+      "name": "index-CQ9GXFmD.js",
+      "sha256": "a3da491a728546c124a527a678853dbe2f3108933560f2e4a56d83c733b44952"
+    },
+    {
+      "name": "training.worker-C75XRuYa.js",
+      "sha256": "7a49e4c13c939f293faad0cef37516248ad5750cf7102f11e6967c9c3be280f6"
+    }
+  ]
+}

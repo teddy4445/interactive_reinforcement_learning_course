@@ -1,0 +1,28 @@
+{
+  "source": "Fresh browser import of validated, actually completed developer QA activity records. Not student performance or authenticated grades.",
+  "browser": "153.0.8010.12",
+  "files": [
+    {
+      "path": "evidence/task-11/browser-qa-progress.json",
+      "sha256": "4a480133241f5dfcc4b778d0cbf28b25319902a7baed2c825d5ad8e59b50a380"
+    },
+    {
+      "path": "evidence/task-11/browser-qa-imitation.json",
+      "sha256": "a404b10ec642233b570a28b69db662c97ba874bb3e6a20e7fd94b078053d8ff0"
+    }
+  ],
+  "complete": 11,
+  "status": [
+    "01Introduction to Reinforcement LearningBase CampComplete↗",
+    "02Tabular MDP Planning and RL Policy EvaluationMDP BeachComplete↗",
+    "03MDP continuationValue ForestComplete↗",
+    "04Model-free predictionExperience JungleComplete↗",
+    "05Model-free controlControl RidgeComplete↗",
+    "06Function approximationFeature HighlandsComplete↗",
+    "07Planning and modelsModelers MarshComplete↗",
+    "08Policy gradients and Actor CriticsPolicy SummitComplete↗",
+    "09Deep Reinforcement Learning (1)Deep Mountains IComplete↗",
+    "10Deep Reinforcement Learning (2)Deep Mountains IIComplete↗",
+    "11Mimic learningDemonstration VillageComplete↗"
+  ]
+}

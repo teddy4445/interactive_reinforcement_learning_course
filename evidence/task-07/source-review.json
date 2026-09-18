@@ -1,0 +1,40 @@
+{
+  "reviewDate": "2026-09-18",
+  "provenance": "evidence/task-00-01/reference-fetch.json",
+  "entries": [
+    {
+      "lesson": "09",
+      "url": "https://teddylazebnik.com/files/rl_course/10.pdf",
+      "localFile": ".local/references/lesson-09.pdf",
+      "sha256": "ae7315efb8eec2a1a9ff58de6a29553ba76706406565e8f64ee5059be768ca7c",
+      "completeTextReviewed": true,
+      "visualPhysicalPages": [
+        11,
+        13,
+        18,
+        22
+      ],
+      "fullContentApproval": false,
+      "activityMappings": "pending instructor review",
+      "freshWebReaderAttempt": "Tool reported URL not accessible; no new retrieval claimed"
+    },
+    {
+      "lesson": "10",
+      "url": "https://teddylazebnik.com/files/rl_course/14.pdf",
+      "localFile": ".local/references/lesson-10.pdf",
+      "sha256": "24c5ad0a75abd46442dccaf7bd337a4ddcd3819f8c5cde9a90aa7efeabbccfb1",
+      "completeTextReviewed": true,
+      "visualPhysicalPages": [
+        6,
+        24,
+        32,
+        33
+      ],
+      "fullContentApproval": false,
+      "activityMappings": "pending instructor review",
+      "freshWebReaderAttempt": "Tool reported URL not accessible; no new retrieval claimed"
+    }
+  ],
+  "splitCorrection": "Replay/target ablations explicitly bridge from part 1. Part 2 GVF, normalization and distributional topics are conceptual/numerical exercises; live learner remains scalar DQN.",
+  "unavailable": "Fresh web-reader access to both public PDFs; verified repository copies remain available."
+}

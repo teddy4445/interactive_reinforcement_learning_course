@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+(node:11832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\policy-methods.spec.js:14:1 › complete lesson 08, real three-method experiment, refresh and backward-compatible backup (1.0m)
+  ok 2 tests\e2e\policy-methods.spec.js:25:1 › actor-critic step, terminal trace, reset meanings, worker pause/resume/cancel and cap skip (14.1s)
+  ok 3 tests\e2e\policy-methods.spec.js:30:1 › all three policy methods produce identical seeded results across display speeds (23.6s)
+  ok 4 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 320 (8.6s)
+  ok 5 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 390 (9.1s)
+  ok 6 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 768 (10.0s)
+
+  6 passed (2.5m)

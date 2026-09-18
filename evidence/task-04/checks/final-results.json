@@ -1,0 +1,36 @@
+[
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "startedAt": "2026-09-17T23:37:35.7955971+03:00",
+    "finishedAt": "2026-09-17T23:37:47.9384903+03:00",
+    "log": "checks/lint-final.log"
+  },
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "startedAt": "2026-09-17T23:37:48.0688141+03:00",
+    "finishedAt": "2026-09-17T23:37:54.7227591+03:00",
+    "log": "checks/typecheck-final.log"
+  },
+  {
+    "command": "npm run test:unit",
+    "exitCode": 0,
+    "startedAt": "2026-09-17T23:37:54.7329439+03:00",
+    "finishedAt": "2026-09-17T23:38:15.4587298+03:00",
+    "log": "checks/unit-final.log"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "startedAt": "2026-09-17T23:38:15.4724934+03:00",
+    "finishedAt": "2026-09-17T23:38:27.4985175+03:00",
+    "log": "checks/build-final.log"
+  },
+  {
+    "command": "npm run test:e2e -- tests/e2e/model-free.spec.js tests/e2e/shell.spec.js",
+    "exitCode": 0,
+    "finishedAt": "2026-09-17T23:43:58.1722520+03:00",
+    "log": "checks/browser-final.log"
+  }
+]

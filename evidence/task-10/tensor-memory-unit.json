@@ -1,0 +1,64 @@
+{
+  "source": "Actual TensorFlow.js CPU backend in Node/Vitest; not browser heap measurements",
+  "baseline": {
+    "tensors": 0,
+    "bytes": 0
+  },
+  "rows": [
+    {
+      "run": 0,
+      "warm": {
+        "tensors": 13,
+        "bytes": 3108
+      },
+      "after": {
+        "tensors": 0,
+        "bytes": 0
+      }
+    },
+    {
+      "run": 1,
+      "warm": {
+        "tensors": 13,
+        "bytes": 3108
+      },
+      "after": {
+        "tensors": 0,
+        "bytes": 0
+      }
+    },
+    {
+      "run": 2,
+      "warm": {
+        "tensors": 13,
+        "bytes": 3108
+      },
+      "after": {
+        "tensors": 0,
+        "bytes": 0
+      }
+    },
+    {
+      "run": 3,
+      "warm": {
+        "tensors": 13,
+        "bytes": 3108
+      },
+      "after": {
+        "tensors": 0,
+        "bytes": 0
+      }
+    },
+    {
+      "run": 4,
+      "warm": {
+        "tensors": 13,
+        "bytes": 3108
+      },
+      "after": {
+        "tensors": 0,
+        "bytes": 0
+      }
+    }
+  ]
+}

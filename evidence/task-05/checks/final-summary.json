@@ -1,0 +1,73 @@
+{
+  "task": "05",
+  "completedAt": "2026-09-17T21:56:19.993Z",
+  "productionBuild": "../build.json",
+  "milestoneChecks": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "startedAt": "2026-09-17T21:28:53.4786512Z",
+      "finishedAt": "2026-09-17T21:29:15.5869570Z"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-09-17T21:29:15.6369000Z",
+      "finishedAt": "2026-09-17T21:29:21.1931730Z"
+    },
+    {
+      "command": "npm run test:unit",
+      "exitCode": 0,
+      "startedAt": "2026-09-17T21:29:21.2102102Z",
+      "finishedAt": "2026-09-17T21:29:48.3599478Z"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "startedAt": "2026-09-17T21:29:48.3675347Z",
+      "finishedAt": "2026-09-17T21:29:58.2648856Z"
+    }
+  ],
+  "finalLint": {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "startedAt": "2026-09-17T21:54:58.3877326Z",
+    "finishedAt": "2026-09-17T21:55:09.9790692Z"
+  },
+  "initialFullBrowser": {
+    "command": "npm run test:e2e",
+    "exitCode": 1,
+    "startedAt": "2026-09-17T21:32:20.8935156Z",
+    "finishedAt": "2026-09-17T21:47:29.0210036Z"
+  },
+  "fullBrowserCounts": {
+    "passed": 57,
+    "failed": 2
+  },
+  "finalAffectedBrowser": {
+    "command": "node scripts/browser-tests.mjs test tests/e2e/environment.spec.js tests/e2e/lessons.spec.js tests/e2e/model-free.spec.js --grep \"leaving the free manual lab|prediction MC updates|actual computed planning frames|Run/Pause/resume and Step|external timeout\" --repeat-each=3",
+    "exitCode": 0,
+    "startedAt": "2026-09-17T21:51:29.5824929Z",
+    "finishedAt": "2026-09-17T21:54:05.4741549Z"
+  },
+  "finalAffectedCounts": {
+    "passed": 15,
+    "failed": 0,
+    "distinctScenarios": 5,
+    "repetitions": 3
+  },
+  "all59ScenariosHavePassingCoverage": true,
+  "fullSuiteRerunAfterHarnessOnlyCorrections": false,
+  "calibration": {
+    "command": "node scripts/calibrate-approximation-planning.mjs",
+    "exitCode": 0,
+    "comparisons": 8,
+    "trainedRuns": 100
+  },
+  "visualReview": {
+    "command": "node scripts/capture-approximation-review.mjs",
+    "exitCode": 0,
+    "inspected": "../visual-inspection.md"
+  },
+  "deployment": false
+}

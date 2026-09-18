@@ -1,0 +1,31 @@
+
+> rl-island@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.1 C:/Users/lazeb/Desktop/acml_rl_course
+
+ ❯ tests/unit/policy-methods.test.js (24 tests | 1 failed) 21799ms
+   ❯ policy runtime, workers, frozen evaluation and persistence (12)
+     × reinforce save/load preserves partial episodes and identical seeded continuation 5678ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/policy-methods.test.js > policy runtime, workers, frozen evaluation and persistence > reinforce save/load preserves partial episodes and identical seeded continuation
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/unit/policy-methods.test.js:37:62
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 7 passed (8)
+      Tests  1 failed | 235 passed (236)
+   Start at  02:13:53
+   Duration  116.33s (tests 51%, transform 42%, import 7%)
+
+  Transform  transforming modules took 103.32s · 42% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

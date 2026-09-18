@@ -1,0 +1,10 @@
+npm warn audit request to https://registry.npmjs.org/-/npm/v1/security/audits/quick failed, reason: 
+npm error audit endpoint returned an error
+{
+  "message": "request to https://registry.npmjs.org/-/npm/v1/security/audits/quick failed, reason: ",
+  "error": {
+    "summary": "",
+    "detail": ""
+  }
+}
+npm error A complete log of this run can be found in: C:\Users\lazeb\Desktop\acml_rl_course\.local\npm-cache\_logs\2026-09-18T06_32_38_841Z-debug-0.log

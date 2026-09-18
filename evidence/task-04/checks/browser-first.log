@@ -1,0 +1,86 @@
+
+> rl-island@0.1.0 test:e2e
+> node scripts/browser-tests.mjs test tests/e2e/model-free.spec.js
+
+
+Running 10 tests using 1 worker
+
+(node:29076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   1 tests\e2e\model-free.spec.js:31:1 › both full learning journeys, refresh, real independent comparisons, notebook, and backup round trip (6.0m)
+(node:31512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 tests\e2e\model-free.spec.js:44:1 › worker pause/resume/cancel is responsive and preserves actual progress (8.1s)
+  ok  3 tests\e2e\model-free.spec.js:52:1 › seeded tabular results are identical at live, slow, and disabled animation speeds (13.4s)
+  x   4 tests\e2e\model-free.spec.js:61:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves (30.7s)
+(node:31520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 tests\e2e\model-free.spec.js:68:1 › exploring ahead and free text cannot grant completion or expose learning before prediction (6.1s)
+  ok  6 tests\e2e\model-free.spec.js:72:1 › route change cancels hidden training and refresh restores a checkpoint (7.9s)
+  ok  7 tests\e2e\model-free.spec.js:76:121 › learning lab accessible responsive mobile (12.4s)
+  ok  8 tests\e2e\model-free.spec.js:76:121 › learning lab accessible responsive tablet (12.7s)
+  ok  9 tests\e2e\model-free.spec.js:76:121 › learning lab accessible responsive wide (12.4s)
+  ok 10 tests\e2e\model-free.spec.js:76:121 › learning lab accessible responsive large-text-320 (11.5s)
+
+
+  1) tests\e2e\model-free.spec.js:31:1 › both full learning journeys, refresh, real independent comparisons, notebook, and backup round trip 
+
+    Test timeout of 360000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 360000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Overlay', { exact: true })
+
+
+      18 |  await prediction(p);await stage(p,2);await expect(action(p,'Step')).toBeEnabled();await action(p,'Step').click();await expect(p.locator('#learning-explanation')).toContainText('Actual update calculation');
+      19 |  await action(p,'Episode').click();await expect(p.locator('#run-facts')).toContainText('1 completed/capped episodes');await train(p,id==='04'?30:60);await evaluate(p);
+    > 20 |  await p.getByLabel('Overlay',{exact:true}).selectOption(id==='04'?'value':'q');await picture(p,'lesson-'+id+'-training-desktop');await axe(p);
+         |                                             ^
+      21 |  const before=await p.locator('#learning-fingerprint').innerText();await p.reload();await expect(p.locator('#learning-fingerprint')).toHaveText(before);await expect(p.locator('#evaluation-rule')).toContainText('five fresh episodes');
+      22 |  await stage(p,3);const math=p.locator('[data-learning-check="math"]');await math.locator('[name="answer0"]').fill(id==='04'?'2.26':'3.398');await math.locator('[name="answer1"]').fill(id==='04'?'4.05':'3.686');await action(p,'Check both calculations').click();await expect(p.locator('#learning-feedback')).toContainText('Correct.');
+      23 |  await stage(p,4);await p.locator('[data-learning-form="comparison"] textarea').fill('Browser QA comparison prediction. All five seeds and both methods will be retained, including failures.');await action(p,'Save prediction and run comparison').click();
+        at complete (C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\model-free.spec.js:20:45)
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\model-free.spec.js:33:2
+
+    Error Context: test-results\model-free-both-full-learn-99af8-ebook-and-backup-round-trip\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\model-free-both-full-learn-99af8-ebook-and-backup-round-trip\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\model-free-both-full-learn-99af8-ebook-and-backup-round-trip\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\e2e\model-free.spec.js:61:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Method', { exact: true })
+
+
+      60 |
+      61 | test('prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves',async({page})=>{
+    > 62 |  await openLab(page,'04');await page.locator('.learning-config summary').click();await page.getByLabel('Method',{exact:true}).selectOption('mc');await action(page,'Start new experiment with these settings').click();await expect(page.locator('#run-facts')).toContainText('First-visit Monte Carlo');await action(page,'Episode').click();await expect(page.locator('#learning-explanation')).toContainText('mc first-visit return');
+         |                                                                                                                               ^
+      63 |  const before=await page.locator('#learning-fingerprint').innerText();await page.getByLabel('Overlay',{exact:true}).selectOption('visits');await picture(page,'mc-visits-update');
+      64 |  await page.locator('.learning-config summary').click();await action(page,'Reset episode').click();await expect(page.locator('#learning-feedback')).toContainText('learned tables preserved');expect(await page.locator('#learning-fingerprint').innerText()).toBe(before);
+      65 |  await page.getByLabel('Discount gamma').fill('0.5');await action(page,'Start new experiment with these settings').click();await expect(page.locator('#run-facts')).toContainText('0 training interactions');await expect(page.locator('#run-facts')).toContainText('γ 0.5');
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\model-free.spec.js:62:127
+
+    Error Context: test-results\model-free-prediction-MC-u-f9e3a-tables-edits-isolate-curves\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\model-free-prediction-MC-u-f9e3a-tables-edits-isolate-curves\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\model-free-prediction-MC-u-f9e3a-tables-edits-isolate-curves\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests\e2e\model-free.spec.js:31:1 › both full learning journeys, refresh, real independent comparisons, notebook, and backup round trip 
+    tests\e2e\model-free.spec.js:61:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves 
+  8 passed (8.5m)

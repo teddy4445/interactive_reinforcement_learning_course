@@ -1,0 +1,67 @@
+{
+  "source": "Actual browser manual run and single-step replay, no learning algorithm",
+  "checkpoint": {
+    "format": "rl-island-environment",
+    "schemaVersion": 1,
+    "engineVersion": 1,
+    "scenario": {
+      "schemaVersion": 1,
+      "id": "slippery-shore",
+      "name": "Slippery Shore",
+      "description": "Choose a direction: 80% follows it, 10% turns clockwise, and 10% turns counterclockwise. Collisions stay in place.",
+      "grid": [
+        "........",
+        ".##.....",
+        "....#...",
+        ".H..#...",
+        "....#...",
+        "........",
+        "..#.....",
+        ".......G"
+      ],
+      "start": {
+        "x": 1,
+        "y": 6
+      },
+      "slip": 0.2,
+      "rewards": {
+        "step": -1,
+        "collision": -2,
+        "goal": 20,
+        "hazard": -5,
+        "collectible": 4
+      },
+      "features": {
+        "collectibles": false,
+        "battery": null,
+        "horizon": null
+      },
+      "observation": "full"
+    },
+    "scenarioHash": "map-v1-7b442257",
+    "stateSchema": [
+      "x",
+      "y"
+    ],
+    "actionOrder": [
+      "up",
+      "right",
+      "down",
+      "left"
+    ],
+    "state": {
+      "x": 1,
+      "y": 3
+    },
+    "seed": 7,
+    "rng": {
+      "algorithm": "xorshift32-v1",
+      "state": 203164826
+    },
+    "steps": 5,
+    "totalReward": -10,
+    "rolloutLimit": 80,
+    "terminated": false,
+    "truncated": false
+  }
+}

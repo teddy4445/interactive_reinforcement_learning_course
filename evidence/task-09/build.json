@@ -1,0 +1,36 @@
+{
+  "capturedAt": "2026-09-18T03:04:39.040Z",
+  "base": "/rl-island/",
+  "post32CaseChange": "Laboratory canvas CSS only: intrinsic aspect ratio and automatic height. Rebuild also changes dependency-linked chunk names. Final responsive checks and browser captures rerun.",
+  "unchangedAssets": [
+    "learner-DVaGqjuE.js",
+    "training.worker-BW848dpu.js"
+  ],
+  "assets": [
+    {
+      "name": "index-DlZFCNT7.css",
+      "bytes": 46956,
+      "sha256": "16d1fa269b8fcae550e73eb34623590b4d0843238929964d549ae4a4df463e13"
+    },
+    {
+      "name": "index-YTFC-fdT.js",
+      "bytes": 507347,
+      "sha256": "a9694eea3c0906ebab03cc232344d400a321f33b20bc336839cf0866a44fc0f3"
+    },
+    {
+      "name": "learner-DVaGqjuE.js",
+      "bytes": 580964,
+      "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b"
+    },
+    {
+      "name": "page-BhqX-7Lq.js",
+      "bytes": 52272,
+      "sha256": "2d149c025bb404c0d27e1365f0479e3e7ba3d27874649bffac39c2463cf6d4df"
+    },
+    {
+      "name": "training.worker-BW848dpu.js",
+      "bytes": 62566,
+      "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+RL Island bundled asset notices
+ACML logo: Copyright 2025 Teddy Lazebnik, MIT; ACML-MIT.txt.
+Inter: SIL Open Font License 1.1; Inter-OFL.txt.
+Chart.js 4.5.1 and @kurkle/color 0.3.4: MIT; Chart-MIT.txt and Kurkle-Color-MIT.txt.
+TensorFlow.js core and CPU backend 4.22.0: Copyright Google LLC, Apache License 2.0; Apache-2.0.txt. Distributed in a lazy CPU-worker chunk with original license comments.
+long 4.0.0: Copyright Daniel Wirtz and contributors, Apache License 2.0; Apache-2.0.txt.
+seedrandom 3.0.5: Copyright David Bau, MIT; Seedrandom-MIT.txt.
+No lecture PDF, pretrained model, remote font, or external neural inference is included.
+KaTeX is installed for development but not imported or bundled. Original application vector artwork is repository-authored.
+Dependency versions and development-tool attributions: docs/ASSET_ATTRIBUTION.md in the source project.

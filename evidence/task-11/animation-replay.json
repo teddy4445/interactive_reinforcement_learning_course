@@ -1,0 +1,13 @@
+{
+  "source": "Three actual worker training runs, same seed/config/60 episodes; only display frequency changed",
+  "speedsMs": [
+    100,
+    800,
+    0
+  ],
+  "digests": [
+    "fnv1a32-d93763c0",
+    "fnv1a32-d93763c0",
+    "fnv1a32-d93763c0"
+  ]
+}

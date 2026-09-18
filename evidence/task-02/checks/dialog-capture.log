@@ -1,0 +1,12 @@
+
+> rl-island@0.1.0 test:e2e
+> node scripts/browser-tests.mjs test --grep checkpoint replacement is explicit
+
+
+Running 1 test using 1 worker
+
+(node:26660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\environment.spec.js:161:1 › checkpoint replacement is explicit, survives refresh, and resumes exactly; reset meanings differ (20.6s)
+
+  1 passed (39.8s)

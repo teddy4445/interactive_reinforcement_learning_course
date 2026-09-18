@@ -1,0 +1,14 @@
+{
+  "source": "Actual browser CPU worker QA, not student results",
+  "interactions": 120,
+  "speeds": [
+    100,
+    800,
+    0
+  ],
+  "digests": [
+    "fnv1a32-ab761db2",
+    "fnv1a32-ab761db2",
+    "fnv1a32-ab761db2"
+  ]
+}

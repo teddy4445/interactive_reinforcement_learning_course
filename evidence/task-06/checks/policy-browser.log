@@ -1,0 +1,51 @@
+
+Running 6 tests using 1 worker
+
+(node:27084) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\e2e\policy-methods.spec.js:14:1 › complete lesson 08, real three-method experiment, refresh and backward-compatible backup (46.0s)
+(node:26656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 tests\e2e\policy-methods.spec.js:25:1 › actor-critic step, terminal trace, reset meanings, worker pause/resume/cancel and cap skip (15.7s)
+  ok 3 tests\e2e\policy-methods.spec.js:30:1 › all three policy methods produce identical seeded results across display speeds (29.7s)
+  ok 4 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 320 (6.3s)
+  ok 5 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 390 (6.6s)
+  ok 6 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 768 (7.4s)
+
+
+  1) tests\e2e\policy-methods.spec.js:14:1 › complete lesson 08, real three-method experiment, refresh and backward-compatible backup 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'Lesson complete', exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'Lesson complete', exact: true }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'Lesson complete', exact: true })
+
+
+      18 |  await stage(page,3);await pMath(page,'.289335756','.05805');await picture(page,'lesson-08-mathematics');await stage(page,4);await page.locator('[data-learning-form="comparison"] textarea').fill('QA prior comparison prediction: the baseline may change variance; observed discounted evaluation will decide the measured ranking.');await action(page,'Save prediction and run comparison').click();await expect(page.locator('#comparison-output')).toContainText('complete · 15 / 15',{timeout:180000});await expect(action(page,'Train batch')).toBeEnabled();await expect(page.locator('#comparison-output')).toContainText('Frozen softmax discounted return');await picture(page,'lesson-08-experiment-desktop');await axe(page);
+      19 |  const comparison=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)).lessons['08'].comparisons.at(-1),key);expect(comparison.runs.every(r=>Object.keys(r.parameters.q).length===0&&r.evaluation.trainingUpdates===0)).toBe(true);expect(new Set(comparison.runs.map(r=>r.algorithm)).size).toBe(3);
+    > 20 |  await stage(page,5);await page.locator('[data-learning-check="challenge"] [name="winner"]').selectOption(observedWinner(comparison));await page.locator('[data-learning-check="challenge"] [name="concept"]').selectOption({index:2});await action(page,'Submit challenge').click();await expect(page.locator('#learning-feedback')).toContainText('Not yet.');await page.locator('[data-learning-check="challenge"] [name="concept"]').selectOption({index:1});await action(page,'Submit challenge').click();await expect(page.getByRole('heading',{name:'Lesson complete',exact:true})).toBeVisible();await page.locator('[data-learning-form="reflection"] textarea').fill('Developer QA reflection: saved as text, not evidence of student learning or automatically graded understanding.');await action(page,'Save reflection').click();await expect(page.locator('#learning-feedback')).toContainText('without automatic grading');await picture(page,'lesson-08-complete-desktop');const all=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)).lessons,key);for(const id of ['04','05','06','07'])expect(all[id]).toEqual(old[id]);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+      21 |  await page.goto('#/island');await expect(page.locator('[data-lesson-status="Complete"]')).toHaveCount(5);await expect(page.locator('[data-lesson-status="Not available yet"]')).toHaveCount(3);await picture(page,'policy-island-desktop');await page.goto('#/notebook');await axe(page);const download=page.waitForEvent('download');await action(page,'Export learning data (04–08)').click();await (await download).saveAs('evidence/task-06/browser-qa-policy.json');
+      22 |  const context=await browser.newContext({baseURL:'http://127.0.0.1:4173/rl-island/'}),other=await context.newPage();try{await other.goto('#/notebook');await other.locator('#learning-backup-file').setInputFiles('evidence/task-06/browser-qa-policy.json');await other.locator('#confirm-learning-import').click();await expect(other.locator('#learning-transfer-status')).toContainText('replaced');await other.goto('#/lesson/08');await expect(other.getByRole('heading',{name:'Lesson complete',exact:true})).toBeVisible();await stage(other,2);await expect(other.locator('#learning-fingerprint')).toHaveText(digest);await other.goto('#/lesson/09');await expect(other.getByRole('heading',{name:'This lesson is unfinished',exact:true})).toBeVisible();}finally{await context.close();}expect(errors).toEqual([]);expect(remote).toEqual([]);
+      23 | });
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\policy-methods.spec.js:20:572
+
+    Error Context: test-results\policy-methods-complete-le-2b58b--backward-compatible-backup\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\policy-methods-complete-le-2b58b--backward-compatible-backup\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\policy-methods-complete-le-2b58b--backward-compatible-backup\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\policy-methods.spec.js:14:1 › complete lesson 08, real three-method experiment, refresh and backward-compatible backup 
+  5 passed (2.2m)

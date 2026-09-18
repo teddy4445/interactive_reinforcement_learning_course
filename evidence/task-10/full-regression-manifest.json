@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "base": "/rl-island/",
+  "version": "1d2a8fd2994bbccb30a2",
+  "entries": [
+    {
+      "url": "/rl-island/assets/acml-logo.png",
+      "bytes": 8046,
+      "sha256": "ca301a8120e874973d1a558ab6efb3abd3b2bfdc272be0b981098166180738d2"
+    },
+    {
+      "url": "/rl-island/assets/index-ByvBdH0m.js",
+      "bytes": 519615,
+      "sha256": "20d137c2f46991a00ba833e4abb50245f5711363a32686c3f490e8f1645a2a19"
+    },
+    {
+      "url": "/rl-island/assets/index-CtKq_ol7.css",
+      "bytes": 50781,
+      "sha256": "aaf212e0ab04512938282fbcb2f0f774ea69026b330caa7e5795593e4ca2fb04"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-400-normal-C38fXH4l.woff2",
+      "bytes": 23664,
+      "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-400-normal-CyCys3Eg.woff",
+      "bytes": 30696,
+      "sha256": "e20fa0b4fd2dd26e4d14b3ac3cc922509c3a63fa5e910e90c614544aa042dd45"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-500-normal-BL9OpVg8.woff",
+      "bytes": 31284,
+      "sha256": "9b42c108da48b5ed55a3072e815ffee2d271562e6c0dd6998910e8f9c09e0a3d"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-500-normal-Cerq10X2.woff2",
+      "bytes": 24272,
+      "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-600-normal-CiBQ2DWP.woff",
+      "bytes": 31260,
+      "sha256": "6a9cb3a509b4eeaf12b7dda6c4aacac3e85d07f4201bf4dd716e332e692b87bd"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-600-normal-LgqL8muc.woff2",
+      "bytes": 24452,
+      "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-700-normal-BLAVimhd.woff",
+      "bytes": 31320,
+      "sha256": "7c5ed5655730de337704d3fc94628515cd7e3d8d32368871709bf56ac0397e7a"
+    },
+    {
+      "url": "/rl-island/assets/inter-latin-700-normal-Yt3aPRUw.woff2",
+      "bytes": 24356,
+      "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491"
+    },
+    {
+      "url": "/rl-island/assets/learner-DVaGqjuE.js",
+      "bytes": 580964,
+      "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b"
+    },
+    {
+      "url": "/rl-island/assets/licenses/ACML-MIT.txt",
+      "bytes": 1071,
+      "sha256": "51eb56eccf5be54587b492e857e2b2d0096d91ee5844e882198cccb2db5441f7"
+    },
+    {
+      "url": "/rl-island/assets/licenses/Inter-OFL.txt",
+      "bytes": 4477,
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+    },
+    {
+      "url": "/rl-island/assets/page-BHxXu9_5.js",
+      "bytes": 53711,
+      "sha256": "84ee642b2bfaacfe83a9345ef50a1a0a918413b7269ebbb27acf144aa7136bca"
+    },
+    {
+      "url": "/rl-island/assets/training.worker-BW848dpu.js",
+      "bytes": 62566,
+      "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7"
+    },
+    {
+      "url": "/rl-island/index.html",
+      "bytes": 796,
+      "sha256": "f5f006cc40580739d58c3a646807d6d608fd27c65d78d2b6311b41d2f85ecc1a"
+    }
+  ]
+}

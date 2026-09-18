@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-18T00:17:42.524Z",
+  "url": "https://teddylazebnik.com/files/rl_course/11.pdf",
+  "localSha256": "143b49cf23f438ff4c11d1ffe852bc6f68ba615df24250bb53a47eb4fa864a19",
+  "localBytes": 9099199,
+  "webReader": "not accessible via this tool",
+  "physicalPagesVisuallyInspected": [
+    7,
+    8,
+    27,
+    28
+  ],
+  "fullActivityMappingApproved": false,
+  "refresh": {
+    "error": "fetch failed",
+    "code": "EACCES"
+  }
+}

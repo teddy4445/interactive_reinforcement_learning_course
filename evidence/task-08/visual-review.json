@@ -1,0 +1,26 @@
+{
+  "source": "Focused screenshots of actual developer QA manual demonstrations and computed results, not student performance.",
+  "browser": "153.0.8010.12",
+  "viewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "pageOverflow": false,
+  "horizontalTableScroll": {
+    "width": 324,
+    "scrollWidth": 520,
+    "scrollLeft": 196
+  },
+  "build": "See build.json",
+  "screenshots": [
+    "imitation-map-and-protocol",
+    "imitation-supervised-metrics",
+    "imitation-policy-coverage",
+    "imitation-actual-gradient",
+    "imitation-measured-comparison",
+    "imitation-unseen-rollout",
+    "imitation-mobile-probabilities"
+  ]
+}

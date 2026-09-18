@@ -1,0 +1,87 @@
+{
+  "at": "2026-09-18T06:00:33.693Z",
+  "note": "Read-only public link refresh; no catalog credentials, no runtime requests, verified repository copies unchanged",
+  "records": [
+    {
+      "url": "https://acml.teddylazebnik.com/",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/1.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/2.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/3.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/5.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/6.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/7.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/8.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/9.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/10.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/14.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    },
+    {
+      "url": "https://teddylazebnik.com/files/rl_course/11.pdf",
+      "error": "fetch failed",
+      "code": "EACCES"
+    }
+  ],
+  "webReader": {
+    "at": "2026-09-18T06:05:40.736Z",
+    "homepage": {
+      "url": "https://acml.teddylazebnik.com/",
+      "result": "Accessible HTML through web reader; no new rendered screenshot or source-token hash claimed"
+    },
+    "pdfs": [
+      {
+        "url": "https://teddylazebnik.com/files/rl_course/2.pdf",
+        "result": "Not accessible via web reader"
+      },
+      {
+        "url": "https://teddylazebnik.com/files/rl_course/14.pdf",
+        "result": "Not accessible via web reader"
+      },
+      {
+        "url": "https://teddylazebnik.com/files/rl_course/11.pdf",
+        "result": "Not accessible via web reader"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "install": 0,
+  "command": "npm ci --offline --prefix .local/release-install --cache .local/npm-cache"
+}

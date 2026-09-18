@@ -1,0 +1,287 @@
+{
+  "source": "Actual disposable QA evidence, not student results",
+  "benchmark": {
+    "date": "2026-09-17T23:40:46.057Z",
+    "browser": "153.0.8010.12",
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64",
+      "cpu": "Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz",
+      "totalMemoryBytes": 16942497792
+    },
+    "cpu": "Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz",
+    "backend": "cpu",
+    "library": "4.22.0",
+    "seed": 11,
+    "interactions": 600,
+    "updates": 585,
+    "trainingWallMs": [
+      3496.9000000059605,
+      2557.5999999940395,
+      2571.5,
+      2509.5999999940395
+    ],
+    "trainingComputeMs": [
+      2275.6000002622604,
+      1631.2999998629093,
+      1638.5,
+      1615.8999999165535
+    ],
+    "initializationMs": [
+      304,
+      4.0999999940395355,
+      2.7999999821186066,
+      3.7999999821186066
+    ],
+    "evaluationWallMs": [
+      39.900000005960464,
+      40.20000001788139,
+      38.60000002384186,
+      28.5
+    ],
+    "maxMainThreadTimerGapMs": 20,
+    "liveTensorCounts": [
+      {
+        "initial": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "trained": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "evaluated": {
+          "tensors": 13,
+          "bytes": 3108
+        }
+      },
+      {
+        "initial": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "trained": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "evaluated": {
+          "tensors": 13,
+          "bytes": 3108
+        }
+      },
+      {
+        "initial": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "trained": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "evaluated": {
+          "tensors": 13,
+          "bytes": 3108
+        }
+      },
+      {
+        "initial": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "trained": {
+          "tensors": 13,
+          "bytes": 3108
+        },
+        "evaluated": {
+          "tensors": 13,
+          "bytes": 3108
+        }
+      }
+    ],
+    "loss": 0.0021871193312108517,
+    "evaluationReturns": [
+      -1.1000000000000005,
+      0.2499999999999999,
+      0.29999999999999993,
+      0.45000000000000007,
+      0.75
+    ]
+  },
+  "comparisons": [
+    {
+      "lesson": "09",
+      "realBudget": 600,
+      "trainingSeeds": [
+        1663711259,
+        1646933640,
+        1697266497,
+        1680488878,
+        1730821735
+      ],
+      "evaluationSeeds": [
+        2631235553,
+        2614457934,
+        2597680315,
+        2580902696,
+        2698346029
+      ],
+      "runs": 10,
+      "summary": [
+        {
+          "algorithm": "tabular",
+          "label": "Full-state tabular Q",
+          "n": 5,
+          "mean": 0.9,
+          "min": 0.9,
+          "max": 0.9,
+          "scores": [
+            0.9,
+            0.9,
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "algorithm": "dqn",
+          "label": "Neural DQN",
+          "n": 5,
+          "mean": 0.12000000000000055,
+          "min": -2.9999999999999973,
+          "max": 0.9,
+          "scores": [
+            0.9,
+            0.9,
+            0.9,
+            0.9,
+            -2.9999999999999973
+          ]
+        }
+      ],
+      "observedWinner": "tabular",
+      "failures": []
+    },
+    {
+      "lesson": "10",
+      "realBudget": 600,
+      "trainingSeeds": [
+        1663711259,
+        1646933640,
+        1697266497,
+        1680488878,
+        1730821735
+      ],
+      "evaluationSeeds": [
+        2631235553,
+        2614457934,
+        2597680315,
+        2580902696,
+        2698346029
+      ],
+      "runs": 15,
+      "summary": [
+        {
+          "algorithm": "reference",
+          "label": "Replay + target",
+          "n": 5,
+          "mean": 0.12000000000000055,
+          "min": -2.9999999999999973,
+          "max": 0.9,
+          "scores": [
+            0.9,
+            0.9,
+            0.9,
+            0.9,
+            -2.9999999999999973
+          ]
+        },
+        {
+          "algorithm": "chronological",
+          "label": "Chronological batch + target",
+          "n": 5,
+          "mean": 0.6720000000000002,
+          "min": -0.23999999999999946,
+          "max": 0.9,
+          "scores": [
+            0.9,
+            0.9,
+            0.9,
+            0.9,
+            -0.23999999999999946
+          ]
+        },
+        {
+          "algorithm": "online-target",
+          "label": "Replay + online bootstrap",
+          "n": 5,
+          "mean": 0.9,
+          "min": 0.9,
+          "max": 0.9,
+          "scores": [
+            0.9,
+            0.9,
+            0.9,
+            0.9,
+            0.9
+          ]
+        }
+      ],
+      "observedWinner": "online-target",
+      "failures": []
+    }
+  ],
+  "backupBytes": 4075869,
+  "keyboardEvents": [
+    {
+      "command": "initialize",
+      "event": "ack",
+      "ms": 495.5
+    },
+    {
+      "command": "initialize",
+      "event": "ack",
+      "ms": 67.5
+    },
+    {
+      "command": "resetEpisode",
+      "event": "ack",
+      "ms": 7.5
+    },
+    {
+      "command": "step",
+      "event": "ack",
+      "ms": 10.200000017881393
+    },
+    {
+      "command": "trainInteractions",
+      "event": "ack",
+      "ms": 8.5
+    },
+    {
+      "command": "pause",
+      "event": "ack",
+      "ms": 31.299999982118607
+    },
+    {
+      "command": "pause",
+      "event": "paused",
+      "ms": 33.89999997615814
+    },
+    {
+      "command": "resume",
+      "event": "ack",
+      "ms": 8
+    },
+    {
+      "command": "cancel",
+      "event": "ack",
+      "ms": 35.400000005960464
+    },
+    {
+      "command": "cancel",
+      "event": "cancelled",
+      "ms": 38.20000001788139
+    }
+  ]
+}

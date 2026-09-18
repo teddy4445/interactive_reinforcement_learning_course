@@ -1,0 +1,120 @@
+
+Running 65 tests using 1 worker
+
+(node:29916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\approximation-planning.spec.js:22:1 › both advanced six-stage journeys, old-save preservation, refresh and full backup round trip (1.2m)
+  ok  2 tests\e2e\approximation-planning.spec.js:27:1 › linear SARSA, aliased representation, exact traces and reset meanings (9.5s)
+  ok  3 tests\e2e\approximation-planning.spec.js:31:1 › Dyna planning setting, pause/resume/cancel and different display speeds retain identical seeded results (12.8s)
+  ok  4 tests\e2e\approximation-planning.spec.js:35:34 › advanced lesson features and planning are accessible without page overflow at 320 (15.4s)
+  ok  5 tests\e2e\approximation-planning.spec.js:35:34 › advanced lesson features and planning are accessible without page overflow at 390 (21.5s)
+  ok  6 tests\e2e\approximation-planning.spec.js:35:34 › advanced lesson features and planning are accessible without page overflow at 768 (13.1s)
+  ok  7 tests\e2e\environment.spec.js:30:1 › keyboard movement, collision trace, goal reward, and absorbing terminal gameplay (9.5s)
+  ok  8 tests\e2e\environment.spec.js:64:1 › text map and Canvas hit testing inspect cells without moving or drawing RNG (8.2s)
+  ok  9 tests\e2e\environment.spec.js:80:1 › touch movement, slippery probabilities, and mobile inspector use real state (7.9s)
+  ok 10 tests\e2e\environment.spec.js:106:1 › Run/Pause/resume and Step produce identical seeded checkpoints and traces (4.4s)
+  ok 11 tests\e2e\environment.spec.js:129:1 › leaving the free manual lab cancels Run and preserves its session (3.3s)
+  ok 12 tests\e2e\environment.spec.js:145:1 › external timeout is visibly truncated, nonterminal, and cannot keep accumulating rewards (7.9s)
+  ok 13 tests\e2e\environment.spec.js:163:1 › checkpoint replacement is explicit, survives refresh, and resumes exactly; reset meanings differ (7.1s)
+  ok 14 tests\e2e\environment.spec.js:199:1 › collectible mask changes once, is visible, and resets with the episode (8.7s)
+  ok 15 tests\e2e\environment.spec.js:216:1 › invalid seed and hostile checkpoint errors preserve the current episode (3.5s)
+  ok 16 tests\e2e\environment.spec.js:233:1 › unavailable/quota-limited storage leaves memory-only gameplay usable (2.5s)
+  ok 17 tests\e2e\environment.spec.js:249:1 › resize/redraw and reduced motion do not change seeded manual transitions (6.7s)
+  ok 18 tests\e2e\lessons.spec.js:81:1 › complete all three lessons, resume, notebook, export, explicit import, and unfinished later lessons (37.1s)
+  ok 19 tests\e2e\lessons.spec.js:136:1 › exploring ahead and saving free text do not grant completion or reveal pre-prediction results (2.5s)
+  ok 20 tests\e2e\lessons.spec.js:155:1 › actual computed planning frames advance, pause, and cancel on stage navigation (2.9s)
+  ok 21 tests\e2e\lessons.spec.js:188:1 › malformed imports and quota failures preserve memory progress and allow backup (2.4s)
+  ok 22 tests\e2e\lessons.spec.js:208:2 › guided lesson responsive mobile (4.6s)
+  ok 23 tests\e2e\lessons.spec.js:208:2 › guided lesson responsive tablet (4.7s)
+  ok 24 tests\e2e\lessons.spec.js:208:2 › guided lesson responsive wide (5.4s)
+  ok 25 tests\e2e\lessons.spec.js:208:2 › guided lesson responsive large-text-320 (5.5s)
+  ok 26 tests\e2e\lessons.spec.js:219:1 › touch lesson controls and keyboard stage navigation remain usable (7.1s)
+  ok 27 tests\e2e\model-free.spec.js:32:1 › both full learning journeys, refresh, real independent comparisons, notebook, and backup round trip (1.0m)
+  ok 28 tests\e2e\model-free.spec.js:45:1 › worker pause/resume/cancel is responsive and preserves actual progress (3.9s)
+  ok 29 tests\e2e\model-free.spec.js:53:1 › seeded tabular results are identical at live, slow, and disabled animation speeds (7.9s)
+  ok 30 tests\e2e\model-free.spec.js:62:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves (4.8s)
+  ok 31 tests\e2e\model-free.spec.js:69:1 › exploring ahead and free text cannot grant completion or expose learning before prediction (2.6s)
+  ok 32 tests\e2e\model-free.spec.js:73:1 › route change cancels hidden training and refresh restores a checkpoint (3.4s)
+  ok 33 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive mobile (6.6s)
+  ok 34 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive tablet (7.9s)
+  ok 35 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive wide (7.9s)
+  ok 36 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive large-text-320 (6.4s)
+  ok 37 tests\e2e\model-free.spec.js:81:1 › comparison cancellation and refresh preserve the original interactive experiment (5.5s)
+  ok 38 tests\e2e\model-free.spec.js:85:1 › storage denial leaves usable memory-only learning and a downloadable checkpoint (2.4s)
+  ok 39 tests\e2e\model-free.spec.js:90:1 › invalid backup is rejected before replacement and touch controls collect real samples (5.2s)
+  ok 40 tests\e2e\model-free.spec.js:97:1 › trained Q overlay remains contained and its map scroller works at narrow large text (7.4s)
+  ok 41 tests\e2e\policy-methods.spec.js:14:1 › complete lesson 08, real three-method experiment, refresh and backward-compatible backup (53.3s)
+  x  42 tests\e2e\policy-methods.spec.js:25:1 › actor-critic step, terminal trace, reset meanings, worker pause/resume/cancel and cap skip (2.0m)
+(node:25864) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 43 tests\e2e\policy-methods.spec.js:30:1 › all three policy methods produce identical seeded results across display speeds (25.3s)
+  ok 44 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 320 (7.3s)
+  ok 45 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 390 (9.0s)
+  ok 46 tests\e2e\policy-methods.spec.js:33:34 › policy probabilities and update inspector fit accessible viewport 768 (7.6s)
+  ok 47 tests\e2e\shell.spec.js:14:1 › static subpath smoke: welcome loads with local assets and no runtime errors (2.1s)
+  ok 48 tests\e2e\shell.spec.js:36:1 › all shell and unavailable routes support direct entry and reload (3.5s)
+  ok 49 tests\e2e\shell.spec.js:44:1 › keyboard skip link, mobile menu, Escape, route focus, and workspace tabs (2.5s)
+  ok 50 tests\e2e\shell.spec.js:74:1 › notebook tabs operate by keyboard without creating results (1.1s)
+  ok 51 tests\e2e\shell.spec.js:84:1 › display settings persist; defaults leave unrelated host data intact (1.7s)
+  ok 52 tests\e2e\shell.spec.js:98:1 › blocked storage keeps settings usable and gives a visible error (1.1s)
+  ok 53 tests\e2e\shell.spec.js:111:5 › desktop welcome: accessible shell and screenshot (4.0s)
+  ok 54 tests\e2e\shell.spec.js:111:5 › desktop island: accessible shell and screenshot (5.1s)
+  ok 55 tests\e2e\shell.spec.js:111:5 › desktop lesson/01: accessible shell and screenshot (3.9s)
+  ok 56 tests\e2e\shell.spec.js:111:5 › desktop compare: accessible shell and screenshot (3.3s)
+  ok 57 tests\e2e\shell.spec.js:111:5 › desktop notebook: accessible shell and screenshot (3.7s)
+  ok 58 tests\e2e\shell.spec.js:111:5 › desktop settings: accessible shell and screenshot (3.1s)
+  ok 59 tests\e2e\shell.spec.js:111:5 › mobile welcome: accessible shell and screenshot (3.6s)
+  ok 60 tests\e2e\shell.spec.js:111:5 › mobile island: accessible shell and screenshot (4.7s)
+  ok 61 tests\e2e\shell.spec.js:111:5 › mobile lesson/01: accessible shell and screenshot (3.6s)
+  ok 62 tests\e2e\shell.spec.js:111:5 › mobile compare: accessible shell and screenshot (5.2s)
+  ok 63 tests\e2e\shell.spec.js:111:5 › mobile notebook: accessible shell and screenshot (4.2s)
+  ok 64 tests\e2e\shell.spec.js:111:5 › mobile settings: accessible shell and screenshot (4.2s)
+  ok 65 tests\e2e\shell.spec.js:124:1 › tablet and wide workspaces, mobile menu, large text, and reduced motion (4.8s)
+
+
+  1) tests\e2e\policy-methods.spec.js:25:1 › actor-critic step, terminal trace, reset meanings, worker pause/resume/cancel and cap skip 
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Cancel', exact: true })
+        - locator resolved to <button disabled class="button secondary" data-learning-action="cancel">Cancel</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        213 × waiting for element to be visible, enabled and stable
+            - element is not enabled
+          - retrying click action
+            - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      25 | test('actor-critic step, terminal trace, reset meanings, worker pause/resume/cancel and cap skip',async({page})=>{
+      26 |  test.setTimeout(120000);await open(page);await page.locator('.learning-config summary').click();await page.getByLabel('Method',{exact:true}).selectOption('actor-critic');await action(page,'Start new experiment with these settings').click();await action(page,'Step').click();await expect(page.locator('#learning-explanation')).toContainText('Actual TD target');await expect(page.locator('#advanced-inspector')).toContainText('Critic updates: 1');await page.locator('#learning-explanation').screenshot({path:dir+'/actor-critic-actual-update.png'});await train(page,30);await expect(page.locator('#learning-explanation')).toContainText('True terminal');await page.locator('.learning-config summary').click();const parameters=await page.locator('#advanced-inspector details').innerText();await action(page,'Reset episode').click();await expect(page.locator('#learning-feedback')).toContainText('learned parameters preserved');expect(await page.locator('#advanced-inspector details').innerText()).toBe(parameters);
+    > 27 |  await page.getByLabel('Batch episodes',{exact:true}).fill('1000');await action(page,'Train batch').click();await expect(page.locator('#learning-status')).toContainText('Worker: training');await action(page,'Pause').click();await expect(page.locator('#learning-status')).toContainText('Worker: paused');const paused=await page.locator('#learning-fingerprint').innerText();await page.waitForTimeout(200);expect(await page.locator('#learning-fingerprint').innerText()).toBe(paused);await action(page,'Resume').click();await expect(page.locator('#learning-status')).toContainText('Worker: training');await action(page,'Cancel').click();await expect(action(page,'Step')).toBeEnabled();await action(page,'Reset learning').click();await action(page,'Start fresh learning').click();await expect(page.locator('#run-facts')).toContainText('0 training interactions');await expect(page.locator('#advanced-inspector')).toContainText('Critic updates: 0');
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+      28 |  await page.locator('.learning-config summary').click();await page.getByLabel('Method',{exact:true}).selectOption('reinforce');await page.getByLabel('External episode cap').fill('1');await action(page,'Start new experiment with these settings').click();await action(page,'Episode').click();await expect(page.locator('#learning-explanation')).toContainText('Incomplete return skipped');await expect(page.locator('#run-facts')).toContainText('0 numerical updates');await expect(page.locator('#advanced-inspector')).toContainText('Baseline is exactly zero');await page.reload();await expect(page.locator('#run-facts')).toContainText('1 incomplete policy returns skipped');await axe(page);
+      29 | });
+      30 | test('all three policy methods produce identical seeded results across display speeds',async({page})=>{
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\policy-methods.spec.js:27:626
+
+    Error Context: test-results\policy-methods-actor-criti-b53c5--resume-cancel-and-cap-skip\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\policy-methods-actor-criti-b53c5--resume-cancel-and-cap-skip\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\policy-methods-actor-criti-b53c5--resume-cancel-and-cap-skip\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\policy-methods.spec.js:25:1 › actor-critic step, terminal trace, reset meanings, worker pause/resume/cancel and cap skip 
+  64 passed (12.4m)

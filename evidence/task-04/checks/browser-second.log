@@ -1,0 +1,21 @@
+
+> rl-island@0.1.0 test:e2e
+> node scripts/browser-tests.mjs test tests/e2e/model-free.spec.js
+
+
+Running 10 tests using 1 worker
+
+(node:28220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\model-free.spec.js:32:1 › both full learning journeys, refresh, real independent comparisons, notebook, and backup round trip (1.8m)
+  ok  2 tests\e2e\model-free.spec.js:45:1 › worker pause/resume/cancel is responsive and preserves actual progress (14.1s)
+  ok  3 tests\e2e\model-free.spec.js:53:1 › seeded tabular results are identical at live, slow, and disabled animation speeds (16.2s)
+  ok  4 tests\e2e\model-free.spec.js:62:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves (10.5s)
+  ok  5 tests\e2e\model-free.spec.js:69:1 › exploring ahead and free text cannot grant completion or expose learning before prediction (4.8s)
+  ok  6 tests\e2e\model-free.spec.js:73:1 › route change cancels hidden training and refresh restores a checkpoint (8.3s)
+  ok  7 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive mobile (11.9s)
+  ok  8 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive tablet (12.8s)
+  ok  9 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive wide (14.0s)
+  ok 10 tests\e2e\model-free.spec.js:77:121 › learning lab accessible responsive large-text-320 (15.9s)
+
+  10 passed (4.1m)

@@ -1,0 +1,45 @@
+{
+  "source": "Actual Playwright Chromium worker send-to-message timings. Step/Pause/Cancel operated with keyboard Space; browser was running a 1,000-episode bounded batch. One local run, not a universal hardware guarantee.",
+  "events": [
+    {
+      "command": "initialize",
+      "event": "ack",
+      "ms": 19.599999994039536
+    },
+    {
+      "command": "step",
+      "event": "ack",
+      "ms": 24.399999976158142
+    },
+    {
+      "command": "train",
+      "event": "ack",
+      "ms": 5.5999999940395355
+    },
+    {
+      "command": "pause",
+      "event": "ack",
+      "ms": 8.799999982118607
+    },
+    {
+      "command": "pause",
+      "event": "paused",
+      "ms": 10.099999994039536
+    },
+    {
+      "command": "resume",
+      "event": "ack",
+      "ms": 6.5999999940395355
+    },
+    {
+      "command": "cancel",
+      "event": "ack",
+      "ms": 5.5
+    },
+    {
+      "command": "cancel",
+      "event": "cancelled",
+      "ms": 6.699999988079071
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "command": "node scripts/browser-tests.mjs test tests/e2e/environment.spec.js tests/e2e/lessons.spec.js tests/e2e/model-free.spec.js --grep \"leaving the free manual lab|prediction MC updates|actual computed planning frames|Run/Pause/resume and Step|external timeout\" --repeat-each=3",
+  "exitCode": 0,
+  "startedAt": "2026-09-17T21:51:29.5824929Z",
+  "finishedAt": "2026-09-17T21:54:05.4741549Z"
+}

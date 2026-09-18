@@ -1,0 +1,17 @@
+
+Running 8 tests using 1 worker
+
+(node:29956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\deep-learning.spec.js:18:1 › complete both neural lessons, preserve old saves, refresh, export/import and honest unfinished lesson (6.0m)
+  ok 2 tests\e2e\deep-learning.spec.js:19:1 › neural controls, exact episode reset, fresh learning and responsive pause/resume/cancel (16.1s)
+  ok 3 tests\e2e\deep-learning.spec.js:20:1 › same seeded CPU DQN results across animation speeds (11.7s)
+  ok 4 tests\e2e\deep-learning.spec.js:21:1 › early lessons do not request TensorFlow or neural chunks (3.0s)
+  ok 5 tests\e2e\deep-learning.spec.js:22:1 › browser CPU benchmark, repeated worker initialization/evaluation memory and main-thread responsiveness (12.9s)
+  ok 6 tests\e2e\deep-learning.spec.js:23:34 › accessible neural inspector fits viewport 320 (6.4s)
+  ok 7 tests\e2e\deep-learning.spec.js:23:34 › accessible neural inspector fits viewport 390 (8.2s)
+  ok 8 tests\e2e\deep-learning.spec.js:23:34 › accessible neural inspector fits viewport 768 (11.2s)
+
+  Slow test file: tests\e2e\deep-learning.spec.js (7.1m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  8 passed (7.3m)

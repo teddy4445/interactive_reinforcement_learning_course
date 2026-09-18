@@ -1,0 +1,569 @@
+{
+  "at": "2026-09-18T07:49:00.885Z",
+  "server": "Plain Node static server, dist only, no transform or route fallback",
+  "base": "http://127.0.0.1:4176/rl-island/",
+  "assets": [
+    {
+      "name": "assets/acml-logo.png",
+      "bytes": 8046,
+      "sha256": "ca301a8120e874973d1a558ab6efb3abd3b2bfdc272be0b981098166180738d2",
+      "mime": "image/png"
+    },
+    {
+      "name": "assets/index-9XUBB3v8.css",
+      "bytes": 50863,
+      "sha256": "b2d8b3341b255e2cbc1f12ccc78cd511faa2d729972a5ae0151d1bc505e7bc30",
+      "mime": "text/css; charset=utf-8"
+    },
+    {
+      "name": "assets/index-B9FAQEzi.js",
+      "bytes": 519971,
+      "sha256": "069daad677575d0c2f91e5f232c2f3500b1486ef7a446d80d031dedceba748ea",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "name": "assets/inter-latin-400-normal-C38fXH4l.woff2",
+      "bytes": 23664,
+      "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc",
+      "mime": "font/woff2"
+    },
+    {
+      "name": "assets/inter-latin-400-normal-CyCys3Eg.woff",
+      "bytes": 30696,
+      "sha256": "e20fa0b4fd2dd26e4d14b3ac3cc922509c3a63fa5e910e90c614544aa042dd45",
+      "mime": "font/woff"
+    },
+    {
+      "name": "assets/inter-latin-500-normal-BL9OpVg8.woff",
+      "bytes": 31284,
+      "sha256": "9b42c108da48b5ed55a3072e815ffee2d271562e6c0dd6998910e8f9c09e0a3d",
+      "mime": "font/woff"
+    },
+    {
+      "name": "assets/inter-latin-500-normal-Cerq10X2.woff2",
+      "bytes": 24272,
+      "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f",
+      "mime": "font/woff2"
+    },
+    {
+      "name": "assets/inter-latin-600-normal-CiBQ2DWP.woff",
+      "bytes": 31260,
+      "sha256": "6a9cb3a509b4eeaf12b7dda6c4aacac3e85d07f4201bf4dd716e332e692b87bd",
+      "mime": "font/woff"
+    },
+    {
+      "name": "assets/inter-latin-600-normal-LgqL8muc.woff2",
+      "bytes": 24452,
+      "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
+      "mime": "font/woff2"
+    },
+    {
+      "name": "assets/inter-latin-700-normal-BLAVimhd.woff",
+      "bytes": 31320,
+      "sha256": "7c5ed5655730de337704d3fc94628515cd7e3d8d32368871709bf56ac0397e7a",
+      "mime": "font/woff"
+    },
+    {
+      "name": "assets/inter-latin-700-normal-Yt3aPRUw.woff2",
+      "bytes": 24356,
+      "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491",
+      "mime": "font/woff2"
+    },
+    {
+      "name": "assets/learner-DVaGqjuE.js",
+      "bytes": 580964,
+      "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "name": "assets/licenses/ACML-MIT.txt",
+      "bytes": 1071,
+      "sha256": "51eb56eccf5be54587b492e857e2b2d0096d91ee5844e882198cccb2db5441f7",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "assets/licenses/Apache-2.0.txt",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "assets/licenses/Chart-MIT.txt",
+      "bytes": 1093,
+      "sha256": "41a84aa2caba645f966a18d9c2056b73e6d3a81d80bc0046bc0011a2634d4cce",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "assets/licenses/Inter-OFL.txt",
+      "bytes": 4477,
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "assets/licenses/Kurkle-Color-MIT.txt",
+      "bytes": 1085,
+      "sha256": "89ba0032731489153d552db918b727feb05128cf9eca20092875a9ad14147671",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "assets/licenses/Seedrandom-MIT.txt",
+      "bytes": 1050,
+      "sha256": "54624bc262234371635aacf512f779e523fc06412869108d0758b71569f7c41a",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "assets/licenses/THIRD-PARTY-NOTICES.txt",
+      "bytes": 869,
+      "sha256": "0b0a60e17028fa1aace428f84911a659895369d7cd3e7e07158b6155983bfbf9",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "assets/page-C34MMlFJ.js",
+      "bytes": 55262,
+      "sha256": "4097551dab1efca0d37dec8b8c55a11de9166a0d1f5c7d11a5923578787ac135",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "name": "assets/training.worker-BW848dpu.js",
+      "bytes": 62566,
+      "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "name": "index.html",
+      "bytes": 796,
+      "sha256": "3678624b3ae8298ccb06a688173dc09e3317a78c51e7fa806335162c3e44980c",
+      "mime": "text/html; charset=utf-8"
+    },
+    {
+      "name": "offline-manifest.json",
+      "bytes": 4044,
+      "sha256": "a6e3ee1a84b57a9a8175cabe0dd4144148c90a92a96f85faad7b02c66269105e",
+      "mime": "application/json"
+    },
+    {
+      "name": "sw.js",
+      "bytes": 7765,
+      "sha256": "11565e8961c883aacf61caf621c706a2a7b2c0bb5dc00912258735f446b6cdce",
+      "mime": "text/javascript; charset=utf-8"
+    }
+  ],
+  "routes": [
+    {
+      "route": "welcome",
+      "title": "A small island.\nA world of learning.",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/01",
+        "#/island",
+        "#/lesson/01",
+        "#/notebook",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "island",
+      "title": "Your island of ideas",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#lesson-list",
+        "#/lesson/01",
+        "#/lesson/02",
+        "#/lesson/03",
+        "#/lesson/04",
+        "#/lesson/05",
+        "#/lesson/06",
+        "#/lesson/07",
+        "#/lesson/08",
+        "#/lesson/09",
+        "#/lesson/10",
+        "#/lesson/11",
+        "#/lesson/01",
+        "#/expedition",
+        "#/notebook",
+        "#/lesson/01",
+        "#/lesson/02",
+        "#/lesson/03",
+        "#/lesson/04",
+        "#/lesson/05",
+        "#/lesson/06",
+        "#/lesson/07",
+        "#/lesson/08",
+        "#/lesson/09",
+        "#/lesson/10",
+        "#/lesson/11",
+        "#/practice"
+      ]
+    },
+    {
+      "route": "sandbox",
+      "title": "Sandbox",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/sandbox",
+        "#/compare",
+        "#/expedition",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "compare",
+      "title": "Compare",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/sandbox",
+        "#/compare",
+        "#/expedition",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "notebook",
+      "title": "Notebook",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/"
+      ]
+    },
+    {
+      "route": "expedition",
+      "title": "Final expedition",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/sandbox",
+        "#/compare",
+        "#/expedition",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "settings",
+      "title": "Settings",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/"
+      ]
+    },
+    {
+      "route": "practice",
+      "title": "Manual lab",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/"
+      ]
+    },
+    {
+      "route": "lesson/01",
+      "title": "Introduction to Reinforcement Learning",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/practice"
+      ]
+    },
+    {
+      "route": "lesson/02",
+      "title": "Tabular MDP Planning and RL Policy Evaluation",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/01",
+        "#/practice"
+      ]
+    },
+    {
+      "route": "lesson/03",
+      "title": "MDP continuation",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/02",
+        "#/practice"
+      ]
+    },
+    {
+      "route": "lesson/04",
+      "title": "Model-free prediction",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/03",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "lesson/05",
+      "title": "Model-free control",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/04",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "lesson/06",
+      "title": "Function approximation",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/05",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "lesson/07",
+      "title": "Planning and models",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/06",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "lesson/08",
+      "title": "Policy gradients and Actor Critics",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/07",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "lesson/09",
+      "title": "Deep Reinforcement Learning (1)",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/08",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "lesson/10",
+      "title": "Deep Reinforcement Learning (2)",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/09",
+        "#/notebook"
+      ]
+    },
+    {
+      "route": "lesson/11",
+      "title": "Mimic learning",
+      "links": [
+        "#main",
+        "#/welcome",
+        "#/island",
+        "#/sandbox",
+        "#/compare",
+        "#/notebook",
+        "#/settings",
+        "https://acml.teddylazebnik.com/",
+        "#/island",
+        "#/lesson/10",
+        "#/notebook"
+      ]
+    }
+  ],
+  "externalLinks": [
+    "https://acml.teddylazebnik.com/"
+  ],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4176/rl-island/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/index-B9FAQEzi.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/index-9XUBB3v8.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/inter-latin-400-normal-C38fXH4l.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/acml-logo.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/inter-latin-700-normal-Yt3aPRUw.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/inter-latin-600-normal-LgqL8muc.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/inter-latin-500-normal-Cerq10X2.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/page-C34MMlFJ.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/training.worker-BW848dpu.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/training.worker-BW848dpu.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/training.worker-BW848dpu.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/training.worker-BW848dpu.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/training.worker-BW848dpu.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/training.worker-BW848dpu.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4176/rl-island/assets/training.worker-BW848dpu.js",
+      "method": "GET"
+    }
+  ],
+  "errors": [],
+  "buildVersion": "a85e523ba15ccbfba6ba",
+  "browser": "153.0.8010.12",
+  "result": "PASS"
+}

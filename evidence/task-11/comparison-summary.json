@@ -1,0 +1,2207 @@
+{
+  "source": "Actual browser runs with developer QA demonstrations; not student results.",
+  "winner": "initialized",
+  "datasetHash": "fnv1a32-974dfa5a",
+  "budget": 600,
+  "fit": {
+    "version": "behavior-cloning-v1",
+    "representation": "full-position-softmax-v1",
+    "datasetHash": "fnv1a32-974dfa5a",
+    "epochs": 120,
+    "alpha": 0.5,
+    "examplePasses": 360,
+    "actor": {
+      "0,1": [
+        -1.0594610569610807,
+        3.178383170883241,
+        -1.0594610569610807,
+        -1.0594610569610807
+      ],
+      "1,1": [
+        -1.0594610569610807,
+        3.178383170883241,
+        -1.0594610569610807,
+        -1.0594610569610807
+      ],
+      "2,1": [
+        3.178383170883241,
+        -1.0594610569610807,
+        -1.0594610569610807,
+        -1.0594610569610807
+      ]
+    },
+    "history": [
+      {
+        "epoch": 0,
+        "train": {
+          "count": 3,
+          "loss": 1.3862943611198906,
+          "accuracy": 0.3333333333333333
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 1,
+        "train": {
+          "count": 3,
+          "loss": 1.2639699845435146,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 10,
+        "train": {
+          "count": 3,
+          "loss": 0.5793040520530695,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 20,
+        "train": {
+          "count": 3,
+          "loss": 0.3077404198892011,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 30,
+        "train": {
+          "count": 3,
+          "loss": 0.1987970841871316,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 40,
+        "train": {
+          "count": 3,
+          "loss": 0.14408916852507891,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 50,
+        "train": {
+          "count": 3,
+          "loss": 0.11206140676007026,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 60,
+        "train": {
+          "count": 3,
+          "loss": 0.09129200217435018,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 70,
+        "train": {
+          "count": 3,
+          "loss": 0.07682885372756498,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 80,
+        "train": {
+          "count": 3,
+          "loss": 0.06622037947625792,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 90,
+        "train": {
+          "count": 3,
+          "loss": 0.05812722812574078,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 100,
+        "train": {
+          "count": 3,
+          "loss": 0.051760478127790055,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 110,
+        "train": {
+          "count": 3,
+          "loss": 0.046627138571430304,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      },
+      {
+        "epoch": 120,
+        "train": {
+          "count": 3,
+          "loss": 0.04240415455827051,
+          "accuracy": 1
+        },
+        "holdout": {
+          "count": 2,
+          "loss": 1.3862943611198906,
+          "accuracy": 0
+        }
+      }
+    ],
+    "last": {
+      "state": "0,1",
+      "action": 1,
+      "probabilities": [
+        0.013963230859952437,
+        0.9581103074201425,
+        0.013963230859952437,
+        0.013963230859952437
+      ],
+      "gradient": [
+        -0.004654410286650813,
+        0.01396323085995251,
+        -0.004654410286650813,
+        -0.004654410286650813
+      ],
+      "before": [
+        -1.0571338518177553,
+        3.1714015554532646,
+        -1.0571338518177553,
+        -1.0571338518177553
+      ],
+      "after": [
+        -1.0594610569610807,
+        3.178383170883241,
+        -1.0594610569610807,
+        -1.0594610569610807
+      ],
+      "normalizer": 3
+    }
+  },
+  "baseline": {
+    "familiar": {
+      "rule": "Frozen learned softmax policy; temperature 1; categorical sampling; no learning",
+      "split": "train",
+      "scenarioHash": "fnv1a32-d0656cda",
+      "parameterHash": "fnv1a32-1fbe4586",
+      "seeds": [
+        701,
+        709,
+        719,
+        727,
+        733
+      ],
+      "rows": [
+        {
+          "seed": 701,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 709,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 719,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 727,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 733,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "trace": [
+        {
+          "decision": {
+            "state": "0,1",
+            "action": 1,
+            "values": [
+              -1.0594610569610807,
+              3.178383170883241,
+              -1.0594610569610807,
+              -1.0594610569610807
+            ],
+            "probabilities": [
+              0.013839224239780176,
+              0.9584823272806594,
+              0.013839224239780176,
+              0.013839224239780176
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.8273695805110037,
+            "branch": "policy-sample",
+            "greedyAction": 1,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": false,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 1,
+            "state": {
+              "x": 0,
+              "y": 1
+            },
+            "observation": {
+              "x": 0,
+              "y": 1,
+              "partial": false
+            },
+            "action": "right",
+            "movement": "right",
+            "collision": false,
+            "reward": -0.05,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 0,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 1,
+              "y": 1
+            },
+            "nextObservation": {
+              "x": 1,
+              "y": 1,
+              "partial": false
+            },
+            "terminated": false,
+            "truncated": false,
+            "reason": null,
+            "draw": 0.8490918087773025,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 1,
+                  "y": 1
+                },
+                "reward": -0.05,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 0,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": false,
+                "reason": null,
+                "movements": [
+                  {
+                    "action": "right",
+                    "probability": 1,
+                    "collision": false
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-eb4e4762"
+          }
+        },
+        {
+          "decision": {
+            "state": "1,1",
+            "action": 1,
+            "values": [
+              -1.0594610569610807,
+              3.178383170883241,
+              -1.0594610569610807,
+              -1.0594610569610807
+            ],
+            "probabilities": [
+              0.013839224239780176,
+              0.9584823272806594,
+              0.013839224239780176,
+              0.013839224239780176
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.6149476652499288,
+            "branch": "policy-sample",
+            "greedyAction": 1,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": false,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 2,
+            "state": {
+              "x": 1,
+              "y": 1
+            },
+            "observation": {
+              "x": 1,
+              "y": 1,
+              "partial": false
+            },
+            "action": "right",
+            "movement": "right",
+            "collision": false,
+            "reward": -0.05,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 0,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 2,
+              "y": 1
+            },
+            "nextObservation": {
+              "x": 2,
+              "y": 1,
+              "partial": false
+            },
+            "terminated": false,
+            "truncated": false,
+            "reason": null,
+            "draw": 0.38551236200146377,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 2,
+                  "y": 1
+                },
+                "reward": -0.05,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 0,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": false,
+                "reason": null,
+                "movements": [
+                  {
+                    "action": "right",
+                    "probability": 1,
+                    "collision": false
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-eb4e4762"
+          }
+        },
+        {
+          "decision": {
+            "state": "2,1",
+            "action": 0,
+            "values": [
+              3.178383170883241,
+              -1.0594610569610807,
+              -1.0594610569610807,
+              -1.0594610569610807
+            ],
+            "probabilities": [
+              0.9584823272806594,
+              0.013839224239780176,
+              0.013839224239780176,
+              0.013839224239780176
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.2550933670718223,
+            "branch": "policy-sample",
+            "greedyAction": 0,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": false,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 3,
+            "state": {
+              "x": 2,
+              "y": 1
+            },
+            "observation": {
+              "x": 2,
+              "y": 1,
+              "partial": false
+            },
+            "action": "up",
+            "movement": "up",
+            "collision": false,
+            "reward": 1,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 1.05,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 2,
+              "y": 0
+            },
+            "nextObservation": {
+              "x": 2,
+              "y": 0,
+              "partial": false
+            },
+            "terminated": true,
+            "truncated": false,
+            "reason": "goal",
+            "draw": 0.9140682409051806,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 2,
+                  "y": 0
+                },
+                "reward": 1,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 1.05,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": true,
+                "reason": "goal",
+                "movements": [
+                  {
+                    "action": "up",
+                    "probability": 1,
+                    "collision": false
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-eb4e4762"
+          }
+        }
+      ],
+      "trainingUpdates": 0
+    },
+    "novel": {
+      "rule": "Frozen learned softmax policy; temperature 1; categorical sampling; no learning",
+      "split": "holdout",
+      "scenarioHash": "fnv1a32-6de16abf",
+      "parameterHash": "fnv1a32-1fbe4586",
+      "seeds": [
+        701,
+        709,
+        719,
+        727,
+        733
+      ],
+      "rows": [
+        {
+          "seed": 701,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 709,
+          "return": 0.6000000000000001,
+          "discountedReturn": 0.14570081500000004,
+          "length": 9,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.85,
+          "discountedReturn": 0.5935000000000001,
+          "length": 4,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ],
+      "trace": [
+        {
+          "decision": {
+            "state": "0,0",
+            "action": 3,
+            "values": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "probabilities": [
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.8273695805110037,
+            "branch": "policy-sample",
+            "greedyAction": 0,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": true,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 1,
+            "state": {
+              "x": 0,
+              "y": 0
+            },
+            "observation": {
+              "x": 0,
+              "y": 0,
+              "partial": false
+            },
+            "action": "left",
+            "movement": "left",
+            "collision": true,
+            "reward": -0.05,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 0,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 0,
+              "y": 0
+            },
+            "nextObservation": {
+              "x": 0,
+              "y": 0,
+              "partial": false
+            },
+            "terminated": false,
+            "truncated": false,
+            "reason": null,
+            "draw": 0.8490918087773025,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 0,
+                  "y": 0
+                },
+                "reward": -0.05,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 0,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": false,
+                "reason": null,
+                "movements": [
+                  {
+                    "action": "left",
+                    "probability": 1,
+                    "collision": true
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-69a78529"
+          }
+        },
+        {
+          "decision": {
+            "state": "0,0",
+            "action": 2,
+            "values": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "probabilities": [
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.6149476652499288,
+            "branch": "policy-sample",
+            "greedyAction": 0,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": true,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 2,
+            "state": {
+              "x": 0,
+              "y": 0
+            },
+            "observation": {
+              "x": 0,
+              "y": 0,
+              "partial": false
+            },
+            "action": "down",
+            "movement": "down",
+            "collision": false,
+            "reward": -0.05,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 0,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 0,
+              "y": 1
+            },
+            "nextObservation": {
+              "x": 0,
+              "y": 1,
+              "partial": false
+            },
+            "terminated": false,
+            "truncated": false,
+            "reason": null,
+            "draw": 0.38551236200146377,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 0,
+                  "y": 1
+                },
+                "reward": -0.05,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 0,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": false,
+                "reason": null,
+                "movements": [
+                  {
+                    "action": "down",
+                    "probability": 1,
+                    "collision": false
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-69a78529"
+          }
+        },
+        {
+          "decision": {
+            "state": "0,1",
+            "action": 1,
+            "values": [
+              -1.0594610569610807,
+              3.178383170883241,
+              -1.0594610569610807,
+              -1.0594610569610807
+            ],
+            "probabilities": [
+              0.013839224239780176,
+              0.9584823272806594,
+              0.013839224239780176,
+              0.013839224239780176
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.2550933670718223,
+            "branch": "policy-sample",
+            "greedyAction": 1,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": false,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 3,
+            "state": {
+              "x": 0,
+              "y": 1
+            },
+            "observation": {
+              "x": 0,
+              "y": 1,
+              "partial": false
+            },
+            "action": "right",
+            "movement": "right",
+            "collision": false,
+            "reward": -0.05,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 0,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 1,
+              "y": 1
+            },
+            "nextObservation": {
+              "x": 1,
+              "y": 1,
+              "partial": false
+            },
+            "terminated": false,
+            "truncated": false,
+            "reason": null,
+            "draw": 0.9140682409051806,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 1,
+                  "y": 1
+                },
+                "reward": -0.05,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 0,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": false,
+                "reason": null,
+                "movements": [
+                  {
+                    "action": "right",
+                    "probability": 1,
+                    "collision": false
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-69a78529"
+          }
+        },
+        {
+          "decision": {
+            "state": "1,1",
+            "action": 1,
+            "values": [
+              -1.0594610569610807,
+              3.178383170883241,
+              -1.0594610569610807,
+              -1.0594610569610807
+            ],
+            "probabilities": [
+              0.013839224239780176,
+              0.9584823272806594,
+              0.013839224239780176,
+              0.013839224239780176
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.888657423434779,
+            "branch": "policy-sample",
+            "greedyAction": 1,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": false,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 4,
+            "state": {
+              "x": 1,
+              "y": 1
+            },
+            "observation": {
+              "x": 1,
+              "y": 1,
+              "partial": false
+            },
+            "action": "right",
+            "movement": "right",
+            "collision": false,
+            "reward": -0.05,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 0,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 2,
+              "y": 1
+            },
+            "nextObservation": {
+              "x": 2,
+              "y": 1,
+              "partial": false
+            },
+            "terminated": false,
+            "truncated": false,
+            "reason": null,
+            "draw": 0.15350877214223146,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 2,
+                  "y": 1
+                },
+                "reward": -0.05,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 0,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": false,
+                "reason": null,
+                "movements": [
+                  {
+                    "action": "right",
+                    "probability": 1,
+                    "collision": false
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-69a78529"
+          }
+        },
+        {
+          "decision": {
+            "state": "2,1",
+            "action": 0,
+            "values": [
+              3.178383170883241,
+              -1.0594610569610807,
+              -1.0594610569610807,
+              -1.0594610569610807
+            ],
+            "probabilities": [
+              0.9584823272806594,
+              0.013839224239780176,
+              0.013839224239780176,
+              0.013839224239780176
+            ],
+            "epsilon": 0,
+            "explorationDraw": null,
+            "actionDraw": 0.3555289162322879,
+            "branch": "policy-sample",
+            "greedyAction": 0,
+            "rule": "Frozen learned softmax policy; categorical sampling"
+          },
+          "unseen": false,
+          "transition": {
+            "schemaVersion": 1,
+            "step": 5,
+            "state": {
+              "x": 2,
+              "y": 1
+            },
+            "observation": {
+              "x": 2,
+              "y": 1,
+              "partial": false
+            },
+            "action": "up",
+            "movement": "up",
+            "collision": false,
+            "reward": 1,
+            "rewardParts": {
+              "step": -0.05,
+              "collision": 0,
+              "goal": 1.05,
+              "hazard": 0,
+              "collectible": 0
+            },
+            "nextState": {
+              "x": 2,
+              "y": 0
+            },
+            "nextObservation": {
+              "x": 2,
+              "y": 0,
+              "partial": false
+            },
+            "terminated": true,
+            "truncated": false,
+            "reason": "goal",
+            "draw": 0.13536751619540155,
+            "probability": 1,
+            "outcomes": [
+              {
+                "probability": 1,
+                "nextState": {
+                  "x": 2,
+                  "y": 0
+                },
+                "reward": 1,
+                "rewardParts": {
+                  "step": -0.05,
+                  "collision": 0,
+                  "goal": 1.05,
+                  "hazard": 0,
+                  "collectible": 0
+                },
+                "terminated": true,
+                "reason": "goal",
+                "movements": [
+                  {
+                    "action": "up",
+                    "probability": 1,
+                    "collision": false
+                  }
+                ]
+              }
+            ],
+            "scenarioHash": "map-v1-69a78529"
+          }
+        }
+      ],
+      "trainingUpdates": 0
+    }
+  },
+  "runs": [
+    {
+      "variant": "scratch",
+      "seed": 11,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": 0.75,
+          "discountedReturn": 0.38573500000000005,
+          "length": 6,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 3
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": 0.75,
+          "discountedReturn": 0.38573500000000005,
+          "length": 6,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 7
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 727,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "scratch",
+      "seed": 29,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": 0.75,
+          "discountedReturn": 0.38573500000000005,
+          "length": 6,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 3
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": 0.75,
+          "discountedReturn": 0.38573500000000005,
+          "length": 6,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 7
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 727,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "scratch",
+      "seed": 47,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": -0.3000000000000005,
+          "discountedReturn": -0.4030837716616,
+          "length": 27,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        },
+        {
+          "seed": 709,
+          "return": -0.10000000000000031,
+          "discountedReturn": -0.3522843646724584,
+          "length": 23,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 7
+        },
+        {
+          "seed": 719,
+          "return": 0.35,
+          "discountedReturn": -0.11872012575065,
+          "length": 14,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 727,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 733,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": -0.3000000000000005,
+          "discountedReturn": -0.4030837716616,
+          "length": 27,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 3
+        },
+        {
+          "seed": 709,
+          "return": -0.10000000000000031,
+          "discountedReturn": -0.3522843646724584,
+          "length": 23,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 8
+        },
+        {
+          "seed": 719,
+          "return": 0.35,
+          "discountedReturn": -0.11872012575065,
+          "length": 14,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 727,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 733,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "scratch",
+      "seed": 83,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": -0.3000000000000005,
+          "discountedReturn": -0.4030837716616,
+          "length": 27,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.4,
+          "discountedReturn": -0.07635569527849995,
+          "length": 13,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": -0.3000000000000005,
+          "discountedReturn": -0.4030837716616,
+          "length": 27,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 3
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 7
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 727,
+          "return": 0.4,
+          "discountedReturn": -0.07635569527849995,
+          "length": 13,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 3
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "scratch",
+      "seed": 101,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": -0.3000000000000005,
+          "discountedReturn": -0.4030837716616,
+          "length": 27,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.4,
+          "discountedReturn": -0.07635569527849995,
+          "length": 13,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": -0.3000000000000005,
+          "discountedReturn": -0.4030837716616,
+          "length": 27,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 3
+        },
+        {
+          "seed": 709,
+          "return": 0.09999999999999976,
+          "discountedReturn": -0.27485804705450134,
+          "length": 19,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 7
+        },
+        {
+          "seed": 719,
+          "return": 0.5,
+          "discountedReturn": 0.023017660150000063,
+          "length": 11,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 5
+        },
+        {
+          "seed": 727,
+          "return": 0.4,
+          "discountedReturn": -0.07635569527849995,
+          "length": 13,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 3
+        },
+        {
+          "seed": 733,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "initialized",
+      "seed": 11,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 709,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 719,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 727,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 733,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 709,
+          "return": 0.6000000000000001,
+          "discountedReturn": 0.14570081500000004,
+          "length": 9,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.85,
+          "discountedReturn": 0.5935000000000001,
+          "length": 4,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "initialized",
+      "seed": 29,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 709,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 719,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 727,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 733,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 709,
+          "return": 0.6000000000000001,
+          "discountedReturn": 0.14570081500000004,
+          "length": 9,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.85,
+          "discountedReturn": 0.5935000000000001,
+          "length": 4,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "initialized",
+      "seed": 47,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 709,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 719,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 727,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 733,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 709,
+          "return": 0.6000000000000001,
+          "discountedReturn": 0.14570081500000004,
+          "length": 9,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.85,
+          "discountedReturn": 0.5935000000000001,
+          "length": 4,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "initialized",
+      "seed": 83,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 709,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 719,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 727,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 733,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 709,
+          "return": 0.6000000000000001,
+          "discountedReturn": 0.14570081500000004,
+          "length": 9,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.85,
+          "discountedReturn": 0.5935000000000001,
+          "length": 4,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    },
+    {
+      "variant": "initialized",
+      "seed": 101,
+      "interactions": 600,
+      "updates": 600,
+      "familiar": [
+        {
+          "seed": 701,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 709,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 719,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 727,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        },
+        {
+          "seed": 733,
+          "return": 0.9,
+          "discountedReturn": 0.7150000000000001,
+          "length": 3,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 0
+        }
+      ],
+      "novel": [
+        {
+          "seed": 701,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 709,
+          "return": 0.6000000000000001,
+          "discountedReturn": 0.14570081500000004,
+          "length": 9,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 6
+        },
+        {
+          "seed": 719,
+          "return": 0.7,
+          "discountedReturn": 0.2971615,
+          "length": 7,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 4
+        },
+        {
+          "seed": 727,
+          "return": 0.8,
+          "discountedReturn": 0.48414999999999997,
+          "length": 5,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 2
+        },
+        {
+          "seed": 733,
+          "return": 0.85,
+          "discountedReturn": 0.5935000000000001,
+          "length": 4,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "unseenVisits": 1
+        }
+      ]
+    }
+  ]
+}

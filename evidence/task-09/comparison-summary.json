@@ -1,0 +1,234 @@
+{
+  "source": "Actual final local browser developer QA comparison, every requested replicate retained; not student outcomes.",
+  "budget": 600,
+  "evaluationSeeds": [
+    2918421417,
+    2901643798,
+    2884866179,
+    2868088560,
+    2985531893
+  ],
+  "smoothing": "None",
+  "groups": [
+    {
+      "method": "q",
+      "statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "trainingSeeds": [
+        11,
+        29,
+        47
+      ],
+      "agents": 3,
+      "realInteractions": [
+        600,
+        600,
+        600
+      ],
+      "updates": [
+        600,
+        600,
+        600
+      ],
+      "planningUpdates": [
+        0,
+        0,
+        0
+      ],
+      "wallMs": [
+        244.10000002384186,
+        267.19999998807907,
+        235.5
+      ],
+      "return": {
+        "n": 3,
+        "mean": 0.8000000000000002,
+        "min": 0.8,
+        "max": 0.8,
+        "sd": 1.3597399555105182e-16
+      },
+      "success": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1,
+        "sd": 0
+      },
+      "length": {
+        "n": 3,
+        "mean": 5,
+        "min": 5,
+        "max": 5,
+        "sd": 0
+      }
+    },
+    {
+      "method": "sarsa",
+      "statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "trainingSeeds": [
+        11,
+        29,
+        47
+      ],
+      "agents": 3,
+      "realInteractions": [
+        600,
+        600,
+        600
+      ],
+      "updates": [
+        600,
+        600,
+        600
+      ],
+      "planningUpdates": [
+        0,
+        0,
+        0
+      ],
+      "wallMs": [
+        178.80000001192093,
+        364.69999998807907,
+        213.30000001192093
+      ],
+      "return": {
+        "n": 3,
+        "mean": 0.8000000000000002,
+        "min": 0.8,
+        "max": 0.8,
+        "sd": 1.3597399555105182e-16
+      },
+      "success": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1,
+        "sd": 0
+      },
+      "length": {
+        "n": 3,
+        "mean": 5,
+        "min": 5,
+        "max": 5,
+        "sd": 0
+      }
+    },
+    {
+      "method": "dyna",
+      "statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "trainingSeeds": [
+        11,
+        29,
+        47
+      ],
+      "agents": 3,
+      "realInteractions": [
+        600,
+        600,
+        600
+      ],
+      "updates": [
+        3600,
+        3600,
+        3600
+      ],
+      "planningUpdates": [
+        3000,
+        3000,
+        3000
+      ],
+      "wallMs": [
+        344.80000001192093,
+        396.59999999403954,
+        307.5
+      ],
+      "return": {
+        "n": 3,
+        "mean": 0.8000000000000002,
+        "min": 0.8,
+        "max": 0.8,
+        "sd": 1.3597399555105182e-16
+      },
+      "success": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1,
+        "sd": 0
+      },
+      "length": {
+        "n": 3,
+        "mean": 5,
+        "min": 5,
+        "max": 5,
+        "sd": 0
+      }
+    },
+    {
+      "method": "actor-critic",
+      "statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "trainingSeeds": [
+        11,
+        29,
+        47
+      ],
+      "agents": 3,
+      "realInteractions": [
+        600,
+        600,
+        600
+      ],
+      "updates": [
+        600,
+        600,
+        600
+      ],
+      "planningUpdates": [
+        0,
+        0,
+        0
+      ],
+      "wallMs": [
+        269.7000000178814,
+        368.59999999403954,
+        199.69999998807907
+      ],
+      "return": {
+        "n": 3,
+        "mean": -0.6366666666666655,
+        "min": -0.699999999999999,
+        "max": -0.5099999999999988,
+        "sd": 0.109696551146029
+      },
+      "success": {
+        "n": 3,
+        "mean": 0.8000000000000002,
+        "min": 0.8,
+        "max": 0.8,
+        "sd": 1.3597399555105182e-16
+      },
+      "length": {
+        "n": 3,
+        "mean": 29.53333333333333,
+        "min": 27,
+        "max": 30.8,
+        "sd": 2.193931022920578
+      }
+    }
+  ]
+}

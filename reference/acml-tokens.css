@@ -1,0 +1,53 @@
+/* RL Island design input, not a complete application stylesheet.
+ * Source audit: 2026-09-17. See docs/ACML_DESIGN.md and SOURCE_AUDIT.md.
+ * Brand colors and named radius values are verified in ACML js/main.js.
+ * Neutral mappings and game/accessibility tokens are documented adaptations.
+ * No font files are included in this bundle.
+ */
+:root {
+  --acml-primary: #2563eb;
+  --acml-secondary: #f43f5e;
+  --acml-radius-button: 8px;
+  --acml-radius-md: 12px;
+  --acml-radius-lg: 16px;
+  --acml-radius-xl: 20px;
+  --acml-radius-2xl: 24px;
+  --acml-radius-pill: 9999px;
+
+  --rl-font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --rl-font-mono: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  --rl-bg: #f9fafb;
+  --rl-surface: #ffffff;
+  --rl-text: #111827;
+  --rl-text-muted: #4b5563;
+  --rl-border: #e5e7eb;
+  --rl-primary-soft: #eff6ff;
+  --rl-secondary-soft: #fff1f2;
+  --rl-secondary-text: #be123c;
+  --rl-primary-strong: #1d4ed8;
+  --rl-success-text: #166534;
+  --rl-success-soft: #f0fdf4;
+  --rl-warning-text: #92400e;
+  --rl-warning-soft: #fffbeb;
+  --rl-danger-text: #b91c1c;
+  --rl-danger-soft: #fef2f2;
+
+  --rl-shadow-card: 0 1px 3px rgb(17 24 39 / 0.06);
+  --rl-shadow-hover: 0 10px 28px rgb(17 24 39 / 0.08);
+  --rl-hero-gradient: linear-gradient(135deg, #111827 0%, #2563eb 58%, #f43f5e 100%);
+  --rl-display-gradient: linear-gradient(90deg, #60a5fa, #c084fc);
+  --rl-focus-ring: 0 0 0 3px rgb(37 99 235 / 0.35);
+  --rl-motion-fast: 160ms;
+  --rl-motion-normal: 240ms;
+
+  --rl-space-1: 4px;
+  --rl-space-2: 8px;
+  --rl-space-3: 12px;
+  --rl-space-4: 16px;
+  --rl-space-6: 24px;
+  --rl-space-8: 32px;
+  --rl-space-12: 48px;
+  --rl-content-max: 1280px;
+  --rl-workspace-max: 1600px;
+  --rl-header-height: 80px;
+}

@@ -1,0 +1,26 @@
+
+Running 15 tests using 1 worker
+
+(node:26636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\environment.spec.js:106:1 › Run/Pause/resume and Step produce identical seeded checkpoints and traces (6.0s)
+  ok  2 tests\e2e\environment.spec.js:129:1 › leaving the free manual lab cancels Run and preserves its session (8.8s)
+  ok  3 tests\e2e\environment.spec.js:145:1 › external timeout is visibly truncated, nonterminal, and cannot keep accumulating rewards (6.7s)
+  ok  4 tests\e2e\lessons.spec.js:155:1 › actual computed planning frames advance, pause, and cancel on stage navigation (5.4s)
+  ok  5 tests\e2e\model-free.spec.js:62:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves (11.4s)
+(node:30684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 tests\e2e\environment.spec.js:106:1 › Run/Pause/resume and Step produce identical seeded checkpoints and traces (9.2s)
+  ok  7 tests\e2e\environment.spec.js:129:1 › leaving the free manual lab cancels Run and preserves its session (4.3s)
+  ok  8 tests\e2e\environment.spec.js:145:1 › external timeout is visibly truncated, nonterminal, and cannot keep accumulating rewards (14.8s)
+  ok  9 tests\e2e\lessons.spec.js:155:1 › actual computed planning frames advance, pause, and cancel on stage navigation (2.2s)
+  ok 10 tests\e2e\model-free.spec.js:62:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves (7.6s)
+(node:12388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 tests\e2e\environment.spec.js:106:1 › Run/Pause/resume and Step produce identical seeded checkpoints and traces (5.8s)
+  ok 12 tests\e2e\environment.spec.js:129:1 › leaving the free manual lab cancels Run and preserves its session (3.3s)
+  ok 13 tests\e2e\environment.spec.js:145:1 › external timeout is visibly truncated, nonterminal, and cannot keep accumulating rewards (12.3s)
+  ok 14 tests\e2e\lessons.spec.js:155:1 › actual computed planning frames advance, pause, and cancel on stage navigation (5.8s)
+  ok 15 tests\e2e\model-free.spec.js:62:1 › prediction MC updates after complete episodes; episode reset preserves tables; edits isolate curves (7.2s)
+
+  15 passed (2.5m)

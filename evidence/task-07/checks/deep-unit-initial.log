@@ -1,0 +1,45 @@
+
+> rl-island@0.1.0 test:unit
+> vitest run tests/unit/deep.test.js
+
+
+ RUN  v5.0.1 C:/Users/lazeb/Desktop/acml_rl_course
+
+ ❯ tests/unit/deep.test.js (22 tests | 2 failed) 14881ms
+   ❯ neural runtime persistence, budgets, isolation and memory (13)
+     × frozen greedy neural evaluation changes no parameter, replay, target, RNG or optimizer 705ms
+     × legacy task-06 backup preserved while lessons 09/10 can be added 508ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/deep.test.js > neural runtime persistence, budgets, isolation and memory > frozen greedy neural evaluation changes no parameter, replay, target, RNG or optimizer
+AssertionError: expected 'Frozen greedy policy; epsilon 0; ties…' to be 'Frozen greedy policy; epsilon 0' // Object.is equality
+
+Expected: "Frozen greedy policy; epsilon 0"
+Received: "Frozen greedy policy; epsilon 0; ties up, right, down, left"
+
+ ❯ tests/unit/deep.test.js:34:317
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/unit/deep.test.js > neural runtime persistence, budgets, isolation and memory > legacy task-06 backup preserved while lessons 09/10 can be added
+Error: Policy sampling trace mismatch.
+ ❯ validateDecision src/training/validation.js:49:263
+
+ ❯ validateRunCheckpoint src/training/run.js:107:92
+ ❯ LearningStore.parseImport src/persistence/learning-store.js:57:728
+ ❯ tests/unit/deep.test.js:40:249
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 20 passed (22)
+   Start at  02:06:00
+   Duration  32.38s (tests 47%, transform 44%, import 9%)
+
+  Transform  transforming modules took 14.15s · 44% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

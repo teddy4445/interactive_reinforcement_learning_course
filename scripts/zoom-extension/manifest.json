@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"RL Island local QA zoom","version":"1.0","permissions":["tabs"],"host_permissions":["http://127.0.0.1/*"],"background":{"service_worker":"worker.js"}}

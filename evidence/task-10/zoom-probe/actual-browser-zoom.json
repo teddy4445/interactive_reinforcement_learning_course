@@ -1,0 +1,48 @@
+{
+  "source": "Capture-only diagnostic, no accessibility scan. Real Chromium chrome.tabs.setZoom; no CSS zoom, viewport emulation or pinch scaling",
+  "browser": "153.0.8010.12",
+  "measurements": [
+    {
+      "view": "manual",
+      "requestedZoom": 4,
+      "actualZoom": 3.9999999999999996,
+      "innerWidth": 356,
+      "innerHeight": 226,
+      "outerWidth": 1440,
+      "devicePixelRatio": 4,
+      "scrollWidth": 356,
+      "visualScale": 1,
+      "screenshotWidth": 1424,
+      "screenshotHeight": 905,
+      "violations": []
+    },
+    {
+      "view": "mathematics",
+      "requestedZoom": 4,
+      "actualZoom": 3.9999999999999996,
+      "innerWidth": 356,
+      "innerHeight": 226,
+      "outerWidth": 1440,
+      "devicePixelRatio": 4,
+      "scrollWidth": 356,
+      "visualScale": 1,
+      "screenshotWidth": 1424,
+      "screenshotHeight": 905,
+      "violations": []
+    },
+    {
+      "view": "lecture",
+      "requestedZoom": 4,
+      "actualZoom": 3.9999999999999996,
+      "innerWidth": 356,
+      "innerHeight": 226,
+      "outerWidth": 1440,
+      "devicePixelRatio": 4,
+      "scrollWidth": 356,
+      "visualScale": 1,
+      "screenshotWidth": 1424,
+      "screenshotHeight": 905,
+      "violations": []
+    }
+  ]
+}

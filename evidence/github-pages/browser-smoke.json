@@ -1,0 +1,89 @@
+{
+  "at": "2026-09-18T07:48:18.420Z",
+  "source": "Actual local browser check of the upload folder; not a GitHub-hosted deployment or student outcome",
+  "build": "a85e523ba15ccbfba6ba",
+  "files": 25,
+  "routes": [
+    "welcome",
+    "lesson/09",
+    "notebook",
+    "lesson/11 (offline reload)",
+    "sandbox (offline CPU training and evaluation)"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "browser": "153.0.8010.12",
+  "scope": "http://127.0.0.1:4180/rl-island/",
+  "offlineNeural": {
+    "realInteractions": 60,
+    "optimizerUpdates": 45,
+    "backend": "cpu",
+    "evaluation": {
+      "rule": "Frozen greedy policy; epsilon 0; ties up, right, down, left",
+      "seeds": [
+        2918421417,
+        2901643798,
+        2884866179,
+        2868088560,
+        2985531893
+      ],
+      "parameterHash": "fnv1a32-e16598ed",
+      "rows": [
+        {
+          "seed": 2918421417,
+          "return": -3.999999999999994,
+          "discountedReturn": -0.4998907627497361,
+          "length": 80,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "hazards": 0
+        },
+        {
+          "seed": 2901643798,
+          "return": -3.999999999999994,
+          "discountedReturn": -0.4998907627497361,
+          "length": 80,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "hazards": 0
+        },
+        {
+          "seed": 2884866179,
+          "return": -3.999999999999994,
+          "discountedReturn": -0.4998907627497361,
+          "length": 80,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "hazards": 0
+        },
+        {
+          "seed": 2868088560,
+          "return": -3.999999999999994,
+          "discountedReturn": -0.4998907627497361,
+          "length": 80,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "hazards": 0
+        },
+        {
+          "seed": 2985531893,
+          "return": -3.999999999999994,
+          "discountedReturn": -0.4998907627497361,
+          "length": 80,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "hazards": 0
+        }
+      ],
+      "complete": true,
+      "trainingUpdates": 0
+    },
+    "parametersFrozen": true
+  },
+  "result": "PASS"
+}

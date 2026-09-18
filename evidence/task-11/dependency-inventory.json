@@ -1,0 +1,83 @@
+{
+  "lockSha256": "00323b455ff9fe3786ba2b23e3bb29f2548f15f97164dc2ea5bdde0fc94bcfb9",
+  "direct": [
+    {
+      "name": "@fontsource/inter",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "role": "declared production dependency; see attribution for actual bundling"
+    },
+    {
+      "name": "@tensorflow/tfjs-backend-cpu",
+      "version": "4.22.0",
+      "license": "Apache-2.0",
+      "role": "declared production dependency; see attribution for actual bundling"
+    },
+    {
+      "name": "@tensorflow/tfjs-core",
+      "version": "4.22.0",
+      "license": "Apache-2.0",
+      "role": "declared production dependency; see attribution for actual bundling"
+    },
+    {
+      "name": "chart.js",
+      "version": "4.5.1",
+      "license": "MIT",
+      "role": "declared production dependency; see attribution for actual bundling"
+    },
+    {
+      "name": "katex",
+      "version": "0.18.7",
+      "license": "MIT",
+      "role": "declared production dependency; see attribution for actual bundling"
+    },
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.13.0",
+      "license": "MPL-2.0",
+      "role": "development only"
+    },
+    {
+      "name": "@eslint/js",
+      "version": "10.0.1",
+      "license": "MIT",
+      "role": "development only"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.63.0",
+      "license": "Apache-2.0",
+      "role": "development only"
+    },
+    {
+      "name": "eslint",
+      "version": "10.10.0",
+      "license": "MIT",
+      "role": "development only"
+    },
+    {
+      "name": "globals",
+      "version": "17.12.0",
+      "license": "MIT",
+      "role": "development only"
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "license": "Apache-2.0",
+      "role": "development only"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.0",
+      "license": "MIT",
+      "role": "development only"
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.1",
+      "license": "MIT",
+      "role": "development only"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+
+> rl-island@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.1 C:/Users/lazeb/Desktop/acml_rl_course
+
+
+ Test Files  5 passed (5)
+      Tests  162 passed (162)
+   Start at  23:38:02
+   Duration  12.91s (tests 60%, transform 31%, import 8%, worker 1%)
+
+  Transform  transforming modules took 8.23s · 31% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

@@ -1,0 +1,74 @@
+[
+  {
+    "label": "full-regression",
+    "version": "1d2a8fd2994bbccb30a2",
+    "totalAssets": 17,
+    "bytes": 1503331,
+    "numericalRuntime": [
+      {
+        "url": "/rl-island/assets/learner-DVaGqjuE.js",
+        "bytes": 580964,
+        "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b"
+      },
+      {
+        "url": "/rl-island/assets/training.worker-BW848dpu.js",
+        "bytes": 62566,
+        "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7"
+      }
+    ]
+  },
+  {
+    "label": "final",
+    "version": "38864e1ee46965e766f6",
+    "totalAssets": 17,
+    "bytes": 1503995,
+    "numericalRuntime": [
+      {
+        "url": "/rl-island/assets/learner-DVaGqjuE.js",
+        "bytes": 580964,
+        "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b"
+      },
+      {
+        "url": "/rl-island/assets/training.worker-BW848dpu.js",
+        "bytes": 62566,
+        "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7"
+      }
+    ]
+  },
+  {
+    "label": "complete",
+    "version": "1b77bf5ca981f27381f5",
+    "totalAssets": 17,
+    "bytes": 1504197,
+    "numericalRuntime": [
+      {
+        "url": "/rl-island/assets/learner-DVaGqjuE.js",
+        "bytes": 580964,
+        "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b"
+      },
+      {
+        "url": "/rl-island/assets/training.worker-BW848dpu.js",
+        "bytes": 62566,
+        "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7"
+      }
+    ]
+  },
+  {
+    "label": "boundary",
+    "version": "66b882733690cb051ce5",
+    "totalAssets": 17,
+    "bytes": 1504988,
+    "numericalRuntime": [
+      {
+        "url": "/rl-island/assets/learner-DVaGqjuE.js",
+        "bytes": 580964,
+        "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b"
+      },
+      {
+        "url": "/rl-island/assets/training.worker-BW848dpu.js",
+        "bytes": 62566,
+        "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7"
+      }
+    ]
+  }
+]

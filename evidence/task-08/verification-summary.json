@@ -1,0 +1,32 @@
+{
+  "source": "Actual browser runs with developer QA demonstrations; not student results.",
+  "budget": 600,
+  "trainingLoss": [
+    1.3862943611198906,
+    0.04240415455827051
+  ],
+  "heldoutLoss": [
+    1.3862943611198906,
+    1.3862943611198906
+  ],
+  "baseline": {
+    "lower": 0.9,
+    "upper": 0.7500000000000001
+  },
+  "methods": [
+    {
+      "variant": "scratch",
+      "agents": 5,
+      "lower": 0.37799999999999984,
+      "upper": 0.37799999999999984,
+      "success": 1
+    },
+    {
+      "variant": "initialized",
+      "agents": 5,
+      "lower": 0.9,
+      "upper": 0.7500000000000001,
+      "success": 1
+    }
+  ]
+}

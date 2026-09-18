@@ -1,0 +1,12 @@
+{
+  "retrievedAt": "2026-09-17T13:27:22.204Z",
+  "logo": {
+    "url": "https://raw.githubusercontent.com/teddy4445/applied_computational_mathematics_lab_website/main/img/logo.png",
+    "sha256": "ca301a8120e874973d1a558ab6efb3abd3b2bfdc272be0b981098166180738d2",
+    "localPath": "public/assets/acml-logo.png",
+    "license": "Owner repository MIT license; copied unmodified; same asset as live header",
+    "licensePath": "public/assets/licenses/ACML-MIT.txt"
+  },
+  "terrain": "Original SVG geometry in src/ui/art.js",
+  "font": "Locally bundled @fontsource/inter 5.3.0; OFL-1.1"
+}

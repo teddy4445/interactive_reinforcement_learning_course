@@ -1,0 +1,25 @@
+{
+  "capturedAt": "2026-09-18T02:52:59.152Z",
+  "assets": [
+    {
+      "name": "index-CC1R1eYT.js",
+      "sha256": "fbede4e4930553cfa2957731e8883381d6c79f1bfa316cb2e82458c719c0b4a0"
+    },
+    {
+      "name": "index-Dy52Fu5e.css",
+      "sha256": "ab941c735bf35e7be5a791143ba7583b77f6a31a3b4580f347fcd5f5803de47e"
+    },
+    {
+      "name": "learner-DVaGqjuE.js",
+      "sha256": "cd7ffc01d1b73d5b979853743f864e6893e41c6f1870004ec7c64f3b07a27e0b"
+    },
+    {
+      "name": "page-vXxdH1_t.js",
+      "sha256": "22648ddc94e36f73d91179e6ea16a838d898d94853e0be3c8094ea21c7cc13ce"
+    },
+    {
+      "name": "training.worker-BW848dpu.js",
+      "sha256": "17df059cbe75ac1f833a96744ad26e74865768b2fcefb370633899ce81e840f7"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "source": "Actual local browser UI click-to-observed-status timing. Includes main-thread rendering/IPC; not a worst-case guarantee. Intentionally cancelled QA comparison, not student learning data.",
+  "plannedInteractionsPerAgent": 5000,
+  "trainingSeeds": [
+    11,
+    29,
+    47
+  ],
+  "pauseMs": 8.300000011920929,
+  "resumeMs": 8.099999994039536,
+  "cancelMs": 15.699999988079071,
+  "maxTimerGapMs": 17.80000001192093,
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+  "hardwareConcurrency": 8
+}

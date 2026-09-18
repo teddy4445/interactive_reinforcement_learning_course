@@ -1,0 +1,17 @@
+
+> rl-island@0.1.0 test:e2e
+> node scripts/browser-tests.mjs test tests/e2e/approximation-planning.spec.js
+
+
+Running 6 tests using 1 worker
+
+(node:1592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\approximation-planning.spec.js:22:1 › both advanced six-stage journeys, old-save preservation, refresh and full backup round trip (2.7m)
+  ok 2 tests\e2e\approximation-planning.spec.js:27:1 › linear SARSA, aliased representation, exact traces and reset meanings (16.3s)
+  ok 3 tests\e2e\approximation-planning.spec.js:31:1 › Dyna planning setting, pause/resume/cancel and different display speeds retain identical seeded results (19.6s)
+  ok 4 tests\e2e\approximation-planning.spec.js:35:34 › advanced lesson features and planning are accessible without page overflow at 320 (20.2s)
+  ok 5 tests\e2e\approximation-planning.spec.js:35:34 › advanced lesson features and planning are accessible without page overflow at 390 (19.2s)
+  ok 6 tests\e2e\approximation-planning.spec.js:35:34 › advanced lesson features and planning are accessible without page overflow at 768 (21.6s)
+
+  6 passed (4.7m)

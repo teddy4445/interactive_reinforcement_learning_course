@@ -1,0 +1,15 @@
+{
+  "source": "Actual browser request log, neural bundle not fetched",
+  "requests": [
+    "http://127.0.0.1:4173/rl-island/",
+    "http://127.0.0.1:4173/rl-island/assets/index-BNOqJTja.js",
+    "http://127.0.0.1:4173/rl-island/assets/index-r1ZM4tqM.css",
+    "http://127.0.0.1:4173/rl-island/assets/inter-latin-400-normal-C38fXH4l.woff2",
+    "http://127.0.0.1:4173/rl-island/assets/acml-logo.png",
+    "http://127.0.0.1:4173/rl-island/assets/inter-latin-700-normal-Yt3aPRUw.woff2",
+    "http://127.0.0.1:4173/rl-island/assets/inter-latin-500-normal-Cerq10X2.woff2",
+    "http://127.0.0.1:4173/rl-island/assets/inter-latin-600-normal-LgqL8muc.woff2",
+    "http://127.0.0.1:4173/rl-island/assets/training.worker-BW848dpu.js",
+    "http://127.0.0.1:4173/rl-island/assets/training.worker-BW848dpu.js"
+  ]
+}

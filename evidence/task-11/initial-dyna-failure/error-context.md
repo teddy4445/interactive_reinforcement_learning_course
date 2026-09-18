@@ -1,0 +1,77 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: approximation-planning.spec.js >> Dyna planning setting, pause/resume/cancel and different display speeds retain identical seeded results
+- Location: tests\e2e\approximation-planning.spec.js:32:1
+
+# Error details
+
+```
+Error: expect(locator).toContainText(expected) failed
+
+Locator: locator('#learning-status')
+Expected substring: "Worker: paused"
+Received string:    "Worker: idle. 672 episodes · 5000 training interactions"
+Timeout: 5000ms
+
+Call log:
+  - Expect "toContainText" locator('#learning-status') with timeout 5000ms
+  - waiting for locator('#learning-status')
+    13 × locator resolved to <p role="status" aria-live="polite" id="learning-status">Worker: idle. 672 episodes · 5000 training intera…</p>
+       - unexpected value "Worker: idle. 672 episodes · 5000 training interactions"
+
+```
+
+```yaml
+- status: "Worker: idle. 672 episodes · 5000 training interactions"
+```
+
+# Test source
+
+```ts
+  1  | import {readStored} from '../helpers/storage.js';
+  2  | import {test,expect} from '@playwright/test';
+  3  | import AxeBuilder from '@axe-core/playwright';
+  4  | import {mkdir,writeFile} from 'node:fs/promises';
+  5  | import {observedWinner} from '../../src/evaluation/comparison.js';
+  6  | const dir='evidence/task-11/screenshots',key='rl-island:model-free-progress:v1';
+  7  | const stage=(p,n)=>p.locator('[data-learning-stage="'+n+'"]').click();
+  8  | const action=(p,name)=>p.getByRole('button',{name,exact:true});
+  9  | const picture=async(p,name)=>{await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:dir+'/'+name+'.png',fullPage:true,animations:'disabled'});};
+  10 | const axe=async p=>expect((await new AxeBuilder({page:p}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+  11 | async function open(p,id){await p.goto('#/lesson/'+id);await stage(p,1);await p.locator('[data-learning-form="prediction"] textarea').fill('Developer browser QA prediction, not a student result: measure the actual features and equal-real-budget comparison.');await action(p,'Save prediction').click();await stage(p,2);await expect(action(p,'Step')).toBeEnabled();}
+  12 | async function train(p,n){const before=Number((await p.locator('#run-facts').innerText()).match(/(\d+) training interactions/)[1]);await p.getByLabel('Batch real interactions',{exact:true}).fill(String(n));await action(p,'Train batch').click();await expect(p.locator('#run-facts')).toContainText((before+n)+' training interactions',{timeout:90000});await expect(action(p,'Train batch')).toBeEnabled();}
+  13 | async function complete(p,id){
+  14 |  await p.goto('#/lesson/'+id);await p.locator('[data-learning-check="observe"] select').selectOption({index:1});await action(p,'Check understanding').click();await expect(p.locator('#learning-feedback')).toContainText('Correct.');await stage(p,1);await p.locator('[data-learning-form="prediction"] textarea').fill('Browser QA prior prediction: compare real measured outcomes; no method is guaranteed to win.');await action(p,'Save prediction').click();await stage(p,2);await expect(action(p,'Step')).toBeEnabled();await action(p,'Step').focus();await p.keyboard.press('Space');await expect(p.locator('#run-facts')).toContainText('1 training interactions');await expect(p.locator('#learning-explanation')).toContainText('REAL experience');
+  15 |  if(id==='06'){await expect(p.locator('#advanced-inspector')).toContainText('6 state features');await expect(p.locator('#learning-explanation')).toContainText('New dot product');await expect(p.locator('#table-size-result')).toContainText('48 Q entries');await p.locator('[data-learning-form="calculator"] [name="battery"]').fill('2');await action(p,'Calculate table size').click();await expect(p.locator('#table-size-result')).toContainText('144 Q entries');}else{await expect(p.locator('#run-facts')).toContainText('5 SIMULATED planning updates');await expect(p.locator('#advanced-inspector')).toContainText('1 observed state-action pairs');await expect(p.locator('#learning-explanation')).toContainText('SIMULATED planning');}
+  16 |  await action(p,'Episode').click();await expect(p.locator('#run-facts')).toContainText('1 completed/capped episodes');await train(p,300);const digest=await p.locator('#learning-fingerprint').innerText();await action(p,'Evaluate').click();await expect(p.locator('#evaluation-rule')).toContainText('five fresh episodes');expect(await p.locator('#learning-fingerprint').innerText()).toBe(digest);await picture(p,'lesson-'+id+'-training-desktop');await axe(p);await p.reload();await expect(p.locator('#learning-fingerprint')).toHaveText(digest);await expect(p.locator('#evaluation-rule')).toContainText('five fresh episodes');
+  17 |  await stage(p,3);await p.locator('[data-learning-check="math"] [name="answer0"]').fill(id==='06'?'.321':'1.5');await p.locator('[data-learning-check="math"] [name="answer1"]').fill(id==='06'?'-.0395':'60');await action(p,'Check both calculations').click();await expect(p.locator('#learning-feedback')).toContainText('Correct.');
+  18 |  await stage(p,4);await p.locator('[data-learning-form="comparison"] textarea').fill('Browser QA comparison prediction stored before results. Equal real budgets; simulated work counted separately.');await action(p,'Save prediction and run comparison').click();const n=id==='06'?15:10;await expect(p.locator('#comparison-output')).toContainText('complete · '+n+' / '+n,{timeout:180000});await expect(action(p,'Train batch')).toBeEnabled();await picture(p,'lesson-'+id+'-comparison-desktop');await axe(p);
+  19 |  const comparison=(await readStored(p,key)).lessons[id].comparisons.at(-1);expect(comparison.runs.every(r=>r.interactions===600&&r.curve.map(c=>c.interactions).join(',')==='200,400,600')).toBe(true);expect(comparison.runs.every(r=>r.evaluation.trainingUpdates===0)).toBe(true);
+  20 |  await stage(p,5);await p.locator('[data-learning-check="challenge"] [name="winner"]').selectOption('tie');await p.locator('[data-learning-check="challenge"] [name="concept"]').selectOption({index:2});await action(p,'Submit challenge').click();await expect(p.locator('#learning-feedback')).toContainText('Not yet.');await p.locator('[data-learning-check="challenge"] [name="winner"]').selectOption(observedWinner(comparison));await p.locator('[data-learning-check="challenge"] [name="concept"]').selectOption({index:1});await action(p,'Submit challenge').click();await expect(p.getByRole('heading',{name:'Lesson complete',exact:true})).toBeVisible();await p.locator('[data-learning-form="reflection"] textarea').fill('Developer QA reflection only. Saved verbatim, not automatically interpreted or graded.');await action(p,'Save reflection').click();await expect(p.locator('#learning-feedback')).toContainText('without automatic grading');await picture(p,'lesson-'+id+'-complete-desktop');
+  21 | }
+  22 | test.beforeAll(()=>mkdir(dir,{recursive:true}));
+  23 | test('both advanced six-stage journeys, old-save preservation, refresh and full backup round trip',async({page,browser})=>{
+  24 |  test.setTimeout(360000);const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.setViewportSize({width:1440,height:900});await page.goto('#/notebook');await page.locator('#learning-backup-file').setInputFiles('evidence/task-04/browser-qa-learning.json');await page.locator('#confirm-learning-import').click();await expect(page.locator('#learning-transfer-status')).toContainText('replaced');const old=(await readStored(page,key)).lessons;
+  25 |  await complete(page,'06');await complete(page,'07');const all=(await readStored(page,key)).lessons;expect(all['04']).toEqual(old['04']);expect(all['05']).toEqual(old['05']);await page.goto('#/island');await expect(page.locator('[data-lesson-status="Complete"]')).toHaveCount(4);await expect(page.locator('[data-lesson-status="Not available yet"]')).toHaveCount(0);await picture(page,'advanced-island-desktop');await page.goto('#/notebook');await picture(page,'advanced-notebook-desktop');await axe(page);const downloaded=page.waitForEvent('download');await action(page,'Export learning data (04–11)').click();await (await downloaded).saveAs('evidence/task-11/browser-qa-advanced.json');
+  26 |  const context=await browser.newContext({baseURL:'http://127.0.0.1:4173/rl-island/'}),other=await context.newPage();try{await other.goto('#/notebook');await other.locator('#learning-backup-file').setInputFiles('evidence/task-11/browser-qa-advanced.json');await expect(other.getByRole('dialog')).toBeVisible();await other.locator('#confirm-learning-import').click();await expect(other.locator('#learning-transfer-status')).toContainText('replaced');await other.goto('#/lesson/07');await expect(other.getByRole('heading',{name:'Lesson complete',exact:true})).toBeVisible();await stage(other,2);await expect(action(other,'Step')).toBeEnabled();await expect(other.locator('#advanced-inspector')).toContainText('observed state-action pairs');await other.goto('#/lesson/11');await expect(other.getByRole('heading',{name:'Observe: learn from demonstrated actions',exact:true})).toBeVisible();}finally{await context.close();}expect(errors).toEqual([]);
+  27 | });
+  28 | test('linear SARSA, aliased representation, exact traces and reset meanings',async({page})=>{
+  29 |  test.setTimeout(90000);await open(page,'06');await page.locator('.learning-config summary').click();await page.getByLabel('Method',{exact:true}).selectOption('linear-sarsa');await page.getByLabel('Representation',{exact:true}).selectOption('aliased');await action(page,'Start new experiment with these settings').click();await expect(page.locator('#run-facts')).toContainText('Linear SARSA');await train(page,120);await expect(page.locator('#advanced-inspector')).toContainText('24 linear weights');await expect(page.locator('#advanced-inspector')).toContainText('aliased');await page.getByLabel('Overlay',{exact:true}).selectOption('q');await picture(page,'linear-sarsa-aliased-desktop');await axe(page);
+  30 |  const weights=await page.locator('#advanced-inspector').innerText();await page.locator('.learning-config summary').click();await action(page,'Reset episode').click();await expect(page.locator('#learning-feedback')).toContainText('learned parameters preserved');expect((await page.locator('#advanced-inspector').innerText()).split('All weights:')[1].split('Same position')[0]).toBe(weights.split('All weights:')[1].split('Same position')[0]);await action(page,'Reset learning').click();await action(page,'Start fresh learning').click();await expect(page.locator('#run-facts')).toContainText('0 training interactions');await expect(page.locator('#advanced-inspector')).toContainText('All weights: [0, 0');
+  31 | });
+  32 | test('Dyna planning setting, pause/resume/cancel and different display speeds retain identical seeded results',async({page})=>{
+> 33 |  test.setTimeout(120000);await open(page,'07');await page.locator('.learning-config summary').click();await page.getByLabel('Planning updates per real step').fill('20');await action(page,'Start new experiment with these settings').click();await page.getByLabel('Batch real interactions',{exact:true}).fill('5000');await action(page,'Train batch').click();await expect(page.locator('#learning-status')).toContainText('Worker: training');const start=Date.now();await action(page,'Pause').click();await expect(page.locator('#learning-status')).toContainText('Worker: paused');const pauseMs=Date.now()-start,digest=await page.locator('#learning-fingerprint').innerText();await page.waitForTimeout(200);expect(await page.locator('#learning-fingerprint').innerText()).toBe(digest);await action(page,'Resume').click();await expect(page.locator('#learning-status')).toContainText('Worker: training');await action(page,'Cancel').click();await expect(action(page,'Train batch')).toBeEnabled();await picture(page,'dyna-paused-cancelled-desktop');
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^ Error: expect(locator).toContainText(expected) failed
+  34 |  const digests=[];for(const speed of ['100','800','0']){await page.goto('#/');await page.evaluate(k=>localStorage.removeItem(k),key);await page.reload();await open(page,'07');await page.locator('#learning-speed').selectOption(speed);await train(page,300);digests.push(await page.locator('#learning-fingerprint').innerText());}expect(new Set(digests).size).toBe(1);await writeFile('evidence/task-11/advanced-animation-replay.json',JSON.stringify({source:'Actual Chromium Dyna worker runs; only display speed changed. Disposable developer QA, not student results.',realInteractions:300,planningPerInteraction:5,speedsMs:[100,800,0],digests,pauseMs},null,2));
+  35 | });
+  36 | for(const width of [320,390,768])test('advanced lesson features and planning are accessible without page overflow at '+width,async({page})=>{
+  37 |  test.setTimeout(90000);await page.setViewportSize({width,height:900});for(const id of ['06','07']){await open(page,id);await train(page,30);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await axe(page);await picture(page,'lesson-'+id+'-'+width);}
+  38 | });
+  39 | 
+```

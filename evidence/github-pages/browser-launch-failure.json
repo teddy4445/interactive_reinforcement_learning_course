@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-18T07:46:19.495Z",
+  "source": "Actual local browser check of the upload folder; not a GitHub-hosted deployment or student outcome",
+  "build": "a85e523ba15ccbfba6ba",
+  "files": 25,
+  "routes": [],
+  "errors": [],
+  "externalRequests": [],
+  "result": "FAIL",
+  "failure": "browserType.launch: Executable doesn't exist at C:\\Users\\lazeb\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1243\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝\n    at C:\\Users\\lazeb\\Desktop\\acml_rl_course\\scripts\\verify-github-pages.mjs:18:25"
+}

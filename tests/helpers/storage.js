@@ -1,0 +1,3 @@
+/** Read either legacy small JSON or the supported large-progress pointer.
+ * This is a test-only storage probe; no diagnostic API is exposed by the app. */
+export async function readStored(page,key){return page.evaluate(async key=>{const value=JSON.parse(localStorage.getItem(key));if(value?.schemaVersion!==2||value.storage!=='indexeddb')return value;const db=await new Promise((resolve,reject)=>{const req=indexedDB.open('rl-island-learning-v1');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});try{return await new Promise((resolve,reject)=>{const req=db.transaction('progress').objectStore('progress').get(value.recordKey);req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}finally{db.close();}},key);}

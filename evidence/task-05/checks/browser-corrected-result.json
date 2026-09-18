@@ -1,0 +1,6 @@
+{
+  "command": "node scripts/browser-tests.mjs test tests/e2e/environment.spec.js tests/e2e/model-free.spec.js --grep \"leaving the free manual lab|prediction MC updates\" --repeat-each=3",
+  "exitCode": 1,
+  "startedAt": "2026-09-17T21:47:57.3187592Z",
+  "finishedAt": "2026-09-17T21:49:30.1847222Z"
+}

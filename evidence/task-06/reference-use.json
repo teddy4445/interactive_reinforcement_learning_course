@@ -1,0 +1,21 @@
+{
+  "createdAt": "2026-09-17T22:22:56.467Z",
+  "catalogReference": "files/rl_course/9.pdf",
+  "files": [
+    {
+      "path": ".local/references/lesson-08.pdf",
+      "sha256": "17699b660c53b3f7743a407f58b56fee2d2f9b9898c62893ce87fb8ab0b0da05"
+    },
+    {
+      "path": ".local/references/lesson-08-pages.json",
+      "sha256": "046ba4aebf1b499f1ee801ffea80cc86fcbbe9fb9fa7ad9719b8a41334f343e6"
+    }
+  ],
+  "use": "Verified repository reference topic text inspected for direct policy optimization, softmax preferences, fixed-start discounted objective, baseline and actor-critic. Original app exercises. Detailed activity/page mapping remains unverified; no slide-page citations claimed.",
+  "supplementaryNetworkAttempt": {
+    "url": "https://incompleteideas.net/book/RLbook2020.pdf",
+    "result": "Web tool returned HTTP 502 Bad Gateway; not used as a retrieved source."
+  },
+  "publicACMLRefresh": "Not rerun during task 06; previous repository audit retained.",
+  "runtimeReferenceFetch": false
+}

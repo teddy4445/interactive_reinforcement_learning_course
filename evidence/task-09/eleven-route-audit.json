@@ -1,0 +1,145 @@
+[
+  {
+    "id": "01",
+    "title": "Introduction to Reinforcement Learning",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "02",
+    "title": "Tabular MDP Planning and RL Policy Evaluation",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "03",
+    "title": "MDP continuation",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "04",
+    "title": "Model-free prediction",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "05",
+    "title": "Model-free control",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "06",
+    "title": "Function approximation",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "07",
+    "title": "Planning and models",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "08",
+    "title": "Policy gradients and Actor Critics",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "09",
+    "title": "Deep Reinforcement Learning (1)",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "10",
+    "title": "Deep Reinforcement Learning (2)",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  },
+  {
+    "id": "11",
+    "title": "Mimic learning",
+    "stages": [
+      "1Observe",
+      "2Predict",
+      "3Play",
+      "4Reveal the mathematics",
+      "5Experiment",
+      "6Challenge"
+    ],
+    "initialComplete": false
+  }
+]

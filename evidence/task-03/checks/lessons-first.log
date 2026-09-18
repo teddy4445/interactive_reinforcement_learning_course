@@ -1,0 +1,430 @@
+
+> rl-island@0.1.0 test:e2e
+> node scripts/browser-tests.mjs test tests/e2e/lessons.spec.js
+
+
+Running 9 tests using 1 worker
+
+(node:26528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\lessons.spec.js:81:1 › complete all three lessons, resume, notebook, export, explicit import, and unfinished later lessons (25.5s)
+  ok 2 tests\e2e\lessons.spec.js:131:1 › exploring ahead and saving free text do not grant completion or reveal pre-prediction results (2.4s)
+  ok 3 tests\e2e\lessons.spec.js:150:1 › actual computed planning frames advance, pause, and cancel on stage navigation (1.8s)
+  ok 4 tests\e2e\lessons.spec.js:169:1 › malformed imports and quota failures preserve memory progress and allow backup (1.6s)
+  x  5 tests\e2e\lessons.spec.js:189:2 › guided lesson responsive mobile (3.1s)
+(node:21748) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  6 tests\e2e\lessons.spec.js:189:2 › guided lesson responsive tablet (4.0s)
+(node:6952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  7 tests\e2e\lessons.spec.js:189:2 › guided lesson responsive wide (4.2s)
+(node:27492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  8 tests\e2e\lessons.spec.js:189:2 › guided lesson responsive large-text-320 (4.4s)
+(node:18048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 9 tests\e2e\lessons.spec.js:200:1 › touch lesson controls and keyboard stage navigation remain usable (5.5s)
+
+
+  1) tests\e2e\lessons.spec.js:189:2 › guided lesson responsive mobile ─────────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 70
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+    +     "help": "Links must be distinguishable without relying on color",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+    +     "id": "link-in-text-block",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "contrastRatio": 1.12,
+    +               "messageKey": "fgContrast",
+    +               "nodeColor": "#1d4ed8",
+    +               "parentColor": "#4b5563",
+    +               "requiredContrastRatio": 3,
+    +             },
+    +             "id": "link-in-text-block",
+    +             "impact": "serious",
+    +             "message": "The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +           Object {
+    +             "data": null,
+    +             "id": "link-in-text-block-style",
+    +             "impact": "serious",
+    +             "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)
+    +   The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +         "html": "<a href=\"#/lesson/02\">Lesson 02</a>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "a[href$=\"#/lesson/02\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.color",
+    +       "wcag2a",
+    +       "wcag141",
+    +       "TTv5",
+    +       "TT13.a",
+    +       "EN-301-549",
+    +       "EN-9.1.4.1",
+    +       "RGAAv4",
+    +       "RGAA-10.6.1",
+    +     ],
+    +   },
+    + ]
+
+      41 | }
+      42 | async function axe(page) {
+    > 43 |  expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+         |                                                                                                                   ^
+      44 | }
+      45 | async function complete(page,id) {
+      46 |  await page.goto('#/lesson/'+id);
+        at axe (C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:43:115)
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:196:3
+
+    Error Context: test-results\lessons-guided-lesson-responsive-mobile\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\lessons-guided-lesson-responsive-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\lessons-guided-lesson-responsive-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\e2e\lessons.spec.js:189:2 › guided lesson responsive tablet ─────────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 70
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+    +     "help": "Links must be distinguishable without relying on color",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+    +     "id": "link-in-text-block",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "contrastRatio": 1.12,
+    +               "messageKey": "fgContrast",
+    +               "nodeColor": "#1d4ed8",
+    +               "parentColor": "#4b5563",
+    +               "requiredContrastRatio": 3,
+    +             },
+    +             "id": "link-in-text-block",
+    +             "impact": "serious",
+    +             "message": "The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +           Object {
+    +             "data": null,
+    +             "id": "link-in-text-block-style",
+    +             "impact": "serious",
+    +             "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)
+    +   The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +         "html": "<a href=\"#/lesson/02\">Lesson 02</a>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "a[href$=\"#/lesson/02\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.color",
+    +       "wcag2a",
+    +       "wcag141",
+    +       "TTv5",
+    +       "TT13.a",
+    +       "EN-301-549",
+    +       "EN-9.1.4.1",
+    +       "RGAAv4",
+    +       "RGAA-10.6.1",
+    +     ],
+    +   },
+    + ]
+
+      41 | }
+      42 | async function axe(page) {
+    > 43 |  expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+         |                                                                                                                   ^
+      44 | }
+      45 | async function complete(page,id) {
+      46 |  await page.goto('#/lesson/'+id);
+        at axe (C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:43:115)
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:196:3
+
+    Error Context: test-results\lessons-guided-lesson-responsive-tablet\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\lessons-guided-lesson-responsive-tablet\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\lessons-guided-lesson-responsive-tablet\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests\e2e\lessons.spec.js:189:2 › guided lesson responsive wide ───────────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 70
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+    +     "help": "Links must be distinguishable without relying on color",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+    +     "id": "link-in-text-block",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "contrastRatio": 1.12,
+    +               "messageKey": "fgContrast",
+    +               "nodeColor": "#1d4ed8",
+    +               "parentColor": "#4b5563",
+    +               "requiredContrastRatio": 3,
+    +             },
+    +             "id": "link-in-text-block",
+    +             "impact": "serious",
+    +             "message": "The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +           Object {
+    +             "data": null,
+    +             "id": "link-in-text-block-style",
+    +             "impact": "serious",
+    +             "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)
+    +   The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +         "html": "<a href=\"#/lesson/02\">Lesson 02</a>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "a[href$=\"#/lesson/02\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.color",
+    +       "wcag2a",
+    +       "wcag141",
+    +       "TTv5",
+    +       "TT13.a",
+    +       "EN-301-549",
+    +       "EN-9.1.4.1",
+    +       "RGAAv4",
+    +       "RGAA-10.6.1",
+    +     ],
+    +   },
+    + ]
+
+      41 | }
+      42 | async function axe(page) {
+    > 43 |  expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+         |                                                                                                                   ^
+      44 | }
+      45 | async function complete(page,id) {
+      46 |  await page.goto('#/lesson/'+id);
+        at axe (C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:43:115)
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:196:3
+
+    Error Context: test-results\lessons-guided-lesson-responsive-wide\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\lessons-guided-lesson-responsive-wide\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\lessons-guided-lesson-responsive-wide\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) tests\e2e\lessons.spec.js:189:2 › guided lesson responsive large-text-320 ─────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 70
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+    +     "help": "Links must be distinguishable without relying on color",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+    +     "id": "link-in-text-block",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "contrastRatio": 1.12,
+    +               "messageKey": "fgContrast",
+    +               "nodeColor": "#1d4ed8",
+    +               "parentColor": "#4b5563",
+    +               "requiredContrastRatio": 3,
+    +             },
+    +             "id": "link-in-text-block",
+    +             "impact": "serious",
+    +             "message": "The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +           Object {
+    +             "data": null,
+    +             "id": "link-in-text-block-style",
+    +             "impact": "serious",
+    +             "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<p class=\"small\">Suggested first: <a href=\"#/lesson/02\">Lesson 02</a>. Exploration is open; visiting stages grants no completion.</p>",
+    +                 "target": Array [
+    +                   "aside > .small",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   The link has insufficient color contrast of 1.12:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1d4ed8, surrounding text: #4b5563)
+    +   The link has no styling (such as underline) to distinguish it from the surrounding text",
+    +         "html": "<a href=\"#/lesson/02\">Lesson 02</a>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "a[href$=\"#/lesson/02\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.color",
+    +       "wcag2a",
+    +       "wcag141",
+    +       "TTv5",
+    +       "TT13.a",
+    +       "EN-301-549",
+    +       "EN-9.1.4.1",
+    +       "RGAAv4",
+    +       "RGAA-10.6.1",
+    +     ],
+    +   },
+    + ]
+
+      41 | }
+      42 | async function axe(page) {
+    > 43 |  expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+         |                                                                                                                   ^
+      44 | }
+      45 | async function complete(page,id) {
+      46 |  await page.goto('#/lesson/'+id);
+        at axe (C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:43:115)
+        at C:\Users\lazeb\Desktop\acml_rl_course\tests\e2e\lessons.spec.js:196:3
+
+    Error Context: test-results\lessons-guided-lesson-responsive-large-text-320\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\lessons-guided-lesson-responsive-large-text-320\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\lessons-guided-lesson-responsive-large-text-320\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    tests\e2e\lessons.spec.js:189:2 › guided lesson responsive mobile ──────────────────────────────
+    tests\e2e\lessons.spec.js:189:2 › guided lesson responsive tablet ──────────────────────────────
+    tests\e2e\lessons.spec.js:189:2 › guided lesson responsive wide ────────────────────────────────
+    tests\e2e\lessons.spec.js:189:2 › guided lesson responsive large-text-320 ──────────────────────
+  5 passed (1.2m)
