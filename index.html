@@ -1,17 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#2563eb" />
-    <meta name="description" content="RL Island — an ACML reinforcement learning course workspace." />
-    <title>RL Island · ACML</title>
-    <script type="module" crossorigin src="/rl-island/assets/index-B9FAQEzi.js"></script>
-    <link rel="stylesheet" crossorigin href="/rl-island/assets/index-9XUBB3v8.css">
-  <meta name="rl-build" content="a85e523ba15ccbfba6ba"></head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div id="app"></div>
-    <noscript>RL Island needs JavaScript to display its course workspace. No account is required.</noscript>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Open RL Island · ACML</title>
+  <script>
+    // Keep the course and its service worker under /rl-island/ on this domain.
+    // The old #main fragment is a skip-link target, not an application route.
+    window.location.replace('/rl-island/' + (window.location.hash.startsWith('#/') ? window.location.hash : '#/welcome'));
+  </script>
+  <style>
+    body { margin: 0; padding: 48px 24px; background: #f8fafc; color: #172033; font: 18px/1.6 Inter, system-ui, sans-serif; }
+    main { max-width: 640px; margin: 0 auto; padding: 32px; border: 1px solid #e2e8f0; border-radius: 24px; background: white; }
+    h1 { margin-top: 0; }
+    a { color: #1d4ed8; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>RL Island</h1>
+    <p>Opening the ACML reinforcement-learning course.</p>
+    <p><a href="/rl-island/#/welcome">Open RL Island</a></p>
+    <noscript><p>Enable JavaScript to use the interactive course.</p></noscript>
+  </main>
+</body>
 </html>
