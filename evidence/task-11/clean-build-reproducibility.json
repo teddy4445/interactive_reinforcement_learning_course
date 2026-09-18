@@ -1,6 +1,0 @@
-{
-  "source": "Build from a fresh isolated npm ci --offline using the same lockfile; original dependencies preserved",
-  "main": "a85e523ba15ccbfba6ba",
-  "clean": "a85e523ba15ccbfba6ba",
-  "identicalManifest": true
-}

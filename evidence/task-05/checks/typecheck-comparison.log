@@ -1,6 +1,0 @@
-
-> rl-island@0.1.0 typecheck
-> tsc --noEmit
-
-src/ui/learning-lab.js(29,1011): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ 'linear-td': { name: string; prediction: boolean; control: boolean; requiresModel: boolean; supportsQ: boolean; }; 'linear-sarsa': { name: string; prediction: boolean; control: boolean; requiresModel: boolean; supportsQ: boolean; }; ... 4 more ...; q: { ...; }; }'.
-  No index signature with a parameter of type 'string' was found on type '{ 'linear-td': { name: string; prediction: boolean; control: boolean; requiresModel: boolean; supportsQ: boolean; }; 'linear-sarsa': { name: string; prediction: boolean; control: boolean; requiresModel: boolean; supportsQ: boolean; }; ... 4 more ...; q: { ...; }; }'.

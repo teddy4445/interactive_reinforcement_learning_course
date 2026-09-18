@@ -1,9 +1,0 @@
-
-Running 2 tests using 1 worker
-
-(node:16916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
-(Use `node --trace-warnings ...` to show where the warning was created)
-  ok 1 tests\e2e\deep-safety.spec.js:6:1 › failed neural run is visibly saved, survives refresh, grants no completion, and resets to live training (7.5s)
-  ok 2 tests\e2e\deep-safety.spec.js:13:1 › asynchronous neural initialization rejects stale generation when experiments are replaced (1.3s)
-
-  2 passed (15.9s)

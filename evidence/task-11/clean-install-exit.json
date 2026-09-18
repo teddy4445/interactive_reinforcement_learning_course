@@ -1,5 +1,0 @@
-{
-  "install": -4048,
-  "isolation": "Fresh disposable workspace directory, existing node_modules preserved",
-  "command": "npm ci --offline --prefix .local/release-install"
-}

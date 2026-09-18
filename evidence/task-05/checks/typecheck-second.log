@@ -1,6 +1,0 @@
-
-> rl-island@0.1.0 typecheck
-> tsc --noEmit
-
-src/persistence/learning-store.js(22,66): error TS2339: Property 'runIds' does not exist on type '{}'.
-src/persistence/learning-store.js(22,76): error TS2339: Property 'runIds' does not exist on type '{}'.
